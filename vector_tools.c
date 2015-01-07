@@ -1,38 +1,28 @@
 
 # include "wolf.h"
 
-void	init_vector_hori(t_precomp *prec, t_vector *h)
+void		*vect_init(t_vectlst **list)
 {
-	if (prec->angle >= 180 && prec->angle < 360)
-	{
-		h->y = floor(prec->playy / BLOC) * BLOC + BLOC;
-		h->uvy = 64;
-	}
-	else
-	{
-		h->y = floor(prec->playy / BLOC) * BLOC - 0.001;
-		h->uvy = 0;
-	}
-	h->x = prec->playx + (prec->playy - h->y) / prec->td_angle;
-	h->uvx = (int)h->x % 64;
-	h->dist = ((sqrt(pow((prec->playx - h->x), 2.0) + pow((prec->playy - h->y), 2.0))) * prec->fisheye) / ((float)BLOC / 64);
-}
-
-void	init_vector_vert(t_precomp *prec, t_vector *v)
-{
-	if (prec->angle >= 90 && prec->angle < 270)
-	{
-		v->x = floor(prec->playx / BLOC) * BLOC - 0.001;
-		v->uvx = 0;
-	}
-	else
-	{
-		v->x = floor(prec->playx / BLOC) * BLOC + BLOC;
-		v->uvx = 64;
-	}
-	v->y = prec->playy + (prec->playx - v->x) * prec->td_angle;
-	v->uvy = (int)v->y % 64;
-	v->dist = ((sqrt(pow((prec->playx - v->x), 2.0) + pow((prec->playy - v->y), 2.0))) * prec->fisheye) / ((float)BLOC / 64);
+	(**list).floorsv = 0;
+	(**list).floorev = 0;
+	(**list).floorbot = 0;
+	(**list).floortop = 0;
+	(**list).wfloorsv = 0;
+	(**list).wfloorev = 0;
+	(**list).wfloorbot = 0;
+	(**list).wfloortop = 0;
+	(**list).ceilsv = 0;
+	(**list).ceilev = 0;
+	(**list).ceilbot = 0;
+	(**list).ceiltop = 0;
+	(**list).wceilsv = 0;
+	(**list).wceilev = 0;
+	(**list).wceilbot = 0;
+	(**list).wceiltop = 0;
+	(**list).wallc = 0;
+	(**list).wallf = 0;
+	(**list).hc = 0;
+	(**list).hf = 0;
 }
 
 t_vectlst	*vect_new(t_vector *content, char side)
@@ -49,14 +39,7 @@ t_vectlst	*vect_new(t_vector *content, char side)
 	list->side = side;
 	list->next = NULL;
 	list->vector = ctnt;
-	list->floorsv = 0;
-	list->floorev = 0;
-	list->wfloorsv = 0;
-	list->wfloorev = 0;
-	list->ceilsv = 0;
-	list->ceilev = 0;
-	list->wceilsv = 0;
-	list->wceilev = 0;
+	vect_init(&list);
 	return (list);
 }
 

@@ -247,7 +247,6 @@ void					init_vector_vert(t_precomp *prec, t_vector *v);
 void					vect_addsort(t_vectlst **blst, t_vector *content, \
 							char side);
 void					line_cleaner(t_env *e, t_vectlst *blist, int num);
-void					line_display(t_env *e, int num);
 void					vect_clear(t_vectlst **blst);
 void					movement(t_env *e);
 void					pre_comput(t_env *e, float ray_angle);

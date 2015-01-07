@@ -230,19 +230,8 @@ void		display_test(t_env *e, t_vectlst *list, int num)
 			x -= pas;
 			list->wceilbot = list->wceilbot + 1;
 		}
-		//if (list->next)
-		//{
-			x1 = (int)list->vector.x % 64;
-			y1 = (int)list->vector.y % 64;
-			/*if (list->side == 'v' && ancientx <= list->vector.x)
-				x1 = 0;
-			else if (list->side == 'v' && ancientx > list->vector.x)
-				x1 = 64;
-			else if (list->side == 'h' && ancienty <= list->vector.y)
-				y1 = 0;
-			else if (list->side == 'h' && ancienty > list->vector.y)
-				y1 = 64;*/
-		//}
+		x1 = (int)list->vector.x % 64;
+		y1 = (int)list->vector.y % 64;
 		ancientx = list->vector.x;
 		ancienty = list->vector.y;
 		ancientside = list->side;
@@ -304,9 +293,4 @@ void	line_cleaner(t_env *e, t_vectlst *blist, int num)
 		pixel_put(e, num, e->hf, 0xFFFFFF, 0);
 		e->hf = e->hf - 1;
 	}
-}
-
-void		line_display(t_env *e, int num)
-{
-	;
 }
