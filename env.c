@@ -68,10 +68,8 @@ static void			analize_map_data(t_env *e, char **data, int len)
 			e->map.floor = get_map(e, data, &i);
 		else if (strstr(data[i], "HEIGHT MAP : CEILING"))
 			e->map.ceiling = get_map(e, data, &i);
-		//else if (strstr(data[i], "TEXTURE MAP : FLOOR"))
-			//e->map.texture_floor = get_map(e, data, &i);
-		//else if (strstr(data[i], "TEXTURE MAP : CEILING"))
-			//e->map.texture_ceiling = get_map(e, data, &i);
+		else if (strstr(data[i], "TEXTURE MAP :"))
+			e->map.texture = get_map(e, data, &i);
 		else if (strstr(data[i], "PLAYER POSITION :"))
 			get_p(e, data, &i);
 		else if (strstr(data[i], "SPRITE LIST :"))

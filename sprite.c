@@ -10,6 +10,7 @@ void	get_sprite_data(t_env *e, char **data, int n)
 	e->slist.s[n].mobile = ft_atoi(data[4]);
 	e->slist.s[n].attitude = ft_atoi(data[5]);
 	e->slist.s[n].texture = ft_atoi(data[6]);
+	e->slist.s[n].size = ft_atoi(data[7]);
 	e->slist.s[n].onsight = 0;
 }
 

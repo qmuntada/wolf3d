@@ -14,14 +14,14 @@ void	movehor(t_env *e)
 		if (e->map.floor[(int)(e->p.y / BLOC)][(int)(x / BLOC)] \
 			<= e->p.foot + 8 && \
 			e->map.ceiling[(int)(e->p.y / BLOC)][(int)(x / BLOC)] \
-			> e->p.eyes && dist > SZ)
+			> e->p.eyes && dist > e->slist.s[e->slist.n - 1].size)
 			e->p.x += MSPEED * cos(e->p.angle / 180 * M_PI);
 		y = e->p.y - MSPEED * sin(e->p.angle / 180 * M_PI);
 		dist = ((sqrt(pow((e->p.x - e->slist.s[e->slist.n - 1].x), 2.0) + pow((y - e->slist.s[e->slist.n - 1].y), 2.0)))) / ((float)BLOC / 64);
 		if (e->map.floor[(int)(y / BLOC)][(int)(e->p.x / BLOC)] \
 			<= e->p.foot + 8 && \
 			e->map.ceiling[(int)(y / BLOC)][(int)(e->p.x / BLOC)] \
-			> e->p.eyes && dist > SZ)
+			> e->p.eyes && dist > e->slist.s[e->slist.n - 1].size)
 			e->p.y -= MSPEED * sin(e->p.angle / 180 * M_PI);
 	}
 	else if (e->p.forward == -1)
@@ -31,14 +31,14 @@ void	movehor(t_env *e)
 		if (e->map.floor[(int)(e->p.y / BLOC)][(int)(x / BLOC)] \
 			<= e->p.foot + 8 && \
 			e->map.ceiling[(int)(e->p.y / BLOC)][(int)(x / BLOC)] \
-			> e->p.eyes && dist > SZ)
+			> e->p.eyes && dist > e->slist.s[e->slist.n - 1].size)
 			e->p.x -= MSPEED * cos(e->p.angle / 180 * M_PI);
 		y = e->p.y + MSPEED * sin(e->p.angle / 180 * M_PI);
 		dist = ((sqrt(pow((e->p.x - e->slist.s[e->slist.n - 1].x), 2.0) + pow((y - e->slist.s[e->slist.n - 1].y), 2.0)))) / ((float)BLOC / 64);
 		if (e->map.floor[(int)(y / BLOC)][(int)(e->p.x / BLOC)] \
 			<= e->p.foot + 8 && \
 			e->map.ceiling[(int)(y / BLOC)][(int)(e->p.x / BLOC)] \
-			> e->p.eyes && dist > SZ)
+			> e->p.eyes && dist > e->slist.s[e->slist.n - 1].size)
 			e->p.y += MSPEED * sin(e->p.angle / 180 * M_PI);
 	}
 }
@@ -56,14 +56,14 @@ void	movever(t_env *e)
 		if (e->map.floor[(int)(e->p.y / BLOC)][(int)(x / BLOC)] \
 			<= e->p.foot + 8 && \
 			e->map.ceiling[(int)(e->p.y / BLOC)][(int)(x / BLOC)] \
-			> e->p.eyes && dist > SZ)
+			> e->p.eyes && dist > e->slist.s[e->slist.n - 1].size)
 			e->p.x += MSPEED * sin(e->p.angle / 180 * M_PI);
 		y = e->p.y + MSPEED * cos(e->p.angle / 180 * M_PI);
 		dist = ((sqrt(pow((e->p.x - e->slist.s[e->slist.n - 1].x), 2.0) + pow((y - e->slist.s[e->slist.n - 1].y), 2.0)))) / ((float)BLOC / 64);
 		if (e->map.floor[(int)(y / BLOC)][(int)(e->p.x / BLOC)] \
 			<= e->p.foot + 8 && \
 			e->map.ceiling[(int)(y / BLOC)][(int)(e->p.x / BLOC)] \
-			> e->p.eyes && dist > SZ)
+			> e->p.eyes && dist > e->slist.s[e->slist.n - 1].size)
 			e->p.y += MSPEED * cos(e->p.angle / 180 * M_PI);
 	}
 	else if (e->p.straff == 1)
@@ -73,14 +73,14 @@ void	movever(t_env *e)
 		if (e->map.floor[(int)(e->p.y / BLOC)][(int)(x / BLOC)] \
 			<= e->p.foot + 8 && \
 			e->map.ceiling[(int)(e->p.y / BLOC)][(int)(x / BLOC)] \
-			> e->p.eyes && dist > SZ)
+			> e->p.eyes && dist > e->slist.s[e->slist.n - 1].size)
 			e->p.x -= MSPEED * sin(e->p.angle / 180 * M_PI);
 		y = e->p.y - MSPEED * cos(e->p.angle / 180 * M_PI);
 		dist = ((sqrt(pow((e->p.x - e->slist.s[e->slist.n - 1].x), 2.0) + pow((y - e->slist.s[e->slist.n - 1].y), 2.0)))) / ((float)BLOC / 64);
 		if (e->map.floor[(int)(y / BLOC)][(int)(e->p.x / BLOC)] \
 			<= e->p.foot + 8 && \
 			e->map.ceiling[(int)(y / BLOC)][(int)(e->p.x / BLOC)] \
-			> e->p.eyes && dist > SZ)
+			> e->p.eyes && dist > e->slist.s[e->slist.n - 1].size)
 			e->p.y -= MSPEED * cos(e->p.angle / 180 * M_PI);
 	}
 }

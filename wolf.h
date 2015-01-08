@@ -43,7 +43,6 @@
 # define BLOC 64
 # define GRAVITY 15
 # define SCALE 2 // Plus le chiffre est grand, plus le monde paraitra petit
-# define SZ 24 // SPRITE_SIZE
 
 # define ESC 65307
 # define Q 113
@@ -122,6 +121,7 @@ typedef struct			s_map
 	int					height;
 	int					**floor;
 	int					**ceiling;
+	int					**texture;
 	t_player			firstpos;
 }						t_map;
 
@@ -146,6 +146,7 @@ typedef struct			s_sprite
 	int					mobile;
 	int					attitude;
 	int					onsight;
+	int					size;
 	float				x;
 	float				y;
 	float				z;
