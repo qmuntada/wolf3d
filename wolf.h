@@ -193,6 +193,12 @@ typedef struct			s_env
 	t_sprite_list		slist;
 	int					hc;
 	int					hf;
+	float				x;
+	float				y;
+	float				dist;
+	int					vx;
+	int					vy;
+	int					px;
 }						t_env;
 
 typedef struct	s_event_list
@@ -256,7 +262,7 @@ int						mouse(int x, int y, t_env *e);
 void					cursor_move(void *mlx, int x, int y);
 void					get_sprite_list(t_env *e, char **data, int *i);
 void					sprite_display(t_env *e);
-void					pixel_put(t_env *e, int x, int y, int color, int dist);
+void					pixel_put(t_env *e, int x, int y, int color);
 float					get_sprite_coord(t_env *e, int n);
 void					display_sprite(t_env *e, int n, float pas);
 

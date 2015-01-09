@@ -5,6 +5,7 @@ int		calc_wfloor(t_vectlst **list, t_env *e, int *wallf, int *fbot)
 {
 	(**list).wfloorbot = (e->img.center + ((e->p.eyes * e->img.dist) / (**list).vector.dist) / 2);
 	*wallf = e->map.floor[(int)floor(((**list).vector.y) / BLOC)][(int)floor(((**list).vector.x) / BLOC)];
+	(**list).wallf = *wallf;
 	(**list).wfloortop = (**list).wfloorbot - (((e->p.eyes * e->img.dist) / (**list).vector.dist) * (*wallf / e->p.eyes) / 2);
 	if ((**list).wfloorbot > e->hf)
 	{
@@ -26,6 +27,7 @@ int		calc_wceil(t_vectlst **list, t_env *e, int *wallc, int *cbot)
 {
 	(**list).wceilbot = (e->img.center + ((e->p.eyes * e->img.dist) / (**list).vector.dist) / 2);
 	*wallc = e->map.ceiling[(int)floor(((**list).vector.y) / BLOC)][(int)floor(((**list).vector.x) / BLOC)];
+	(**list).wallc = *wallc;
 	(**list).wceiltop = (**list).wceilbot - (((e->p.eyes * e->img.dist) / (**list).vector.dist) * (*wallc / e->p.eyes) / 2);
 	(**list).wceilbot = (**list).wceiltop - (((e->p.eyes * e->img.dist) / (**list).vector.dist) * ((512 - *wallc) / e->p.eyes) / 2);
 	if ((**list).wceilbot < e->hc)
@@ -84,26 +86,93 @@ int		calc_ceil(t_vectlst **list, t_env *e, int wallc, int bot)
 	return (e->hc);
 }
 
+void		render_pointwv(t_env *e, int num, int dist, int tex)
+{
+	int		pos;
+	int		color;
+
+	pos = ((e->vy) * e->texture[tex + 1].bpp / 8) + ((int)e->x * e->texture[tex + 1].sl);
+	color = e->texture[tex].img[pos] + \
+			e->texture[tex].img[pos + 1] * 256 \
+			+ e->texture[tex].img[pos + 2] * 65536;
+	pixel_put(e, num, e->px, color);
+}
+
+void		render_pointwh(t_env *e, int num, int dist, int tex)
+{
+	int		pos;
+	int		color;
+
+	pos = ((e->vx) * e->texture[tex + 1].bpp / 8) + ((int)e->x * e->texture[tex + 1].sl);
+	color = e->texture[tex].img[pos] + \
+			e->texture[tex].img[pos + 1] * 256 \
+			+ e->texture[tex].img[pos + 2] * 65536;
+	pixel_put(e, num, e->px, color);
+}
+
+void		draw_wallf(t_env *e, t_vectlst *list, int num)
+{
+	float	pas;
+	int		tex;
+
+	pas = ((float)BLOC / ((list->wfloorbot + list->wfloorsv) - (list->wfloortop - list->wfloorev)));
+	pas *= ((float)list->wallf / BLOC);
+	e->x = 0 + (list->wfloorsv * pas);
+	tex = e->map.texture[(int)floor(list->vector.y / BLOC)][(int)floor(list->vector.x / BLOC)] * 4 + 2;
+	e->px = list->wfloorbot;
+	while (e->px >= list->wfloortop && e->px >= 0 && e->px <= e->img.height)
+	{
+		e->x += (e->x > 64.0 ? -64.0 : 0);
+		e->x += (e->x < 0 ? 64.0 : 0);
+		if (e->px < e->img.height && e->px >= 0 && e->x >= 0 && e->x <= 64)
+		{
+			if (list->side == 'v')
+				render_pointwv(e, num, list->vector.dist, tex + 1);
+			else
+				render_pointwh(e, num, list->vector.dist, tex);
+		}
+		e->x += pas;
+		e->px -= 1;
+	}
+}
+
+void		draw_wallc(t_env *e, t_vectlst *list, int num)
+{
+	float	pas;
+	float	tex;
+
+	pas = ((float)BLOC / ((list->wceiltop + list->wceilev) - (list->wceilbot - list->wceilsv)));
+	pas *= ((512.0 - (float)list->wallc) / BLOC);
+	e->x = 64 - (list->wceilsv * pas);
+	tex = e->map.texture[(int)floor(list->vector.y / BLOC)][(int)floor(list->vector.x / BLOC)] * 4 + 2;
+	e->px = list->wceilbot;
+	while (e->px <= list->wceiltop && e->px <= e->img.height && e->px >= 0)
+	{
+		e->x += (e->x > 64.0 ? -64.0 : 0);
+		e->x += (e->x < 0 ? 64 : 0);
+		if (e->px < e->img.height && e->px >= 0 && e->x >= 0 && e->x <= 64)
+		{
+			if (list->side == 'v')
+				render_pointwv(e, num, list->vector.dist, tex + 1);
+			else
+				render_pointwh(e, num, list->vector.dist, tex);
+		}
+		e->x -= pas;
+		e->px += 1;
+	}
+}
+
 void		display_test(t_env *e, t_vectlst *list, int num)
 {
 	int		color;
 	int		pos;
-	float	x;
-	float	y;
 	float	pas;
-	int		bot;
-	int		top;
 	float	pasx;
 	float	pasy;
-	float	xlen;
-	float	ylen;
 	float	x1;
 	float	y1;
-	float	x2;
-	float	y2;
 	float	ancientx;
 	float	ancienty;
-	char	ancientside;
 	int		n;
 	int		tex;
 
@@ -111,23 +180,15 @@ void		display_test(t_env *e, t_vectlst *list, int num)
 	y1 = 0;
 	ancientx = e->p.x;
 	ancienty = e->p.y;
-	ancientside = 'v';
 	n = e->line[num].iter;
 	while (list && n-- > 0)
 	{
-		x2 = list->vector.uvx;
-		y2 = list->vector.uvy;
+		e->dist = list->vector.dist;
 		pas = (list->floorbot + list->floorsv) - (list->floortop - list->floorev);
-		xlen = x1 - x2;
-		ylen = y1 - y2;
-		pasx = (-xlen) / pas;
-		pasy = (-ylen) / pas;
+		pasx = (-(x1 - list->vector.uvx)) / pas;
+		pasy = (-(y1 - list->vector.uvy)) / pas;
 		x1 += (list->floorsv * pasx);
 		y1 += (list->floorsv * pasy);
-		x1 += (x1 > 64.0 ? -64.0 : 0);
-		x1 += (x1 < 0 ? 64 : 0);
-		y1 += (y1 > 64.0 ? -64.0 : 0);
-		y1 += (y1 < 0 ? 64 : 0);
 		tex = e->map.texture[(int)floor(ancienty / BLOC)][(int)floor(ancientx / BLOC)] * 4 + 1;
 		while (list->floorbot >= list->floortop && list->floortop >= 0)
 		{
@@ -141,87 +202,27 @@ void		display_test(t_env *e, t_vectlst *list, int num)
 				color = e->texture[tex].img[pos] + \
 						e->texture[tex].img[pos + 1] * 256 \
 						+ e->texture[tex].img[pos + 2] * 65536;
-				pixel_put(e, num, list->floorbot, color, list->vector.dist);
+				pixel_put(e, num, list->floorbot, color);
 
 			}
 			list->floorbot = list->floorbot - 1;
 			x1 += pasx;
 			y1 += pasy;
 		}
-		pas = ((float)BLOC / ((list->wfloorbot + list->wfloorsv) - (list->wfloortop - list->wfloorev)));
-		pas *= ((float)list->wallf / BLOC);
-		x = 0 + (list->wfloorsv * pas);
-		x += (x > 64.0 ? -64.0 : 0);
-		x += (x < 0 ? 64 : 0);
-		tex = e->map.texture[(int)floor(list->vector.y / BLOC)][(int)floor(list->vector.x / BLOC)] * 4 + 2;
-		while (list->wfloorbot >= list->wfloortop && list->wfloortop >= 0 && list->wallf > 0)
-		{
-			x += (x > 64.0 ? -64.0 : 0);
-			x += (x < 0 ? 64.0 : 0);
-			if (list->wfloorbot < e->img.height && list->wfloorbot >= 0 && x >= 0 && x <= 64)
-			{
-				if (list->side == 'v')
-				{
-					pos = (((int)list->vector.y % 64) * e->texture[tex + 1].bpp / 8) + ((int)x * e->texture[tex + 1].sl);
-					color = e->texture[tex + 1].img[pos] + \
-							e->texture[tex + 1].img[pos + 1] * 256 \
-							+ e->texture[tex + 1].img[pos + 2] * 65536;
-					pixel_put(e, num, list->wfloorbot, color, list->vector.dist);
-				}
-				else
-				{
-					pos = (((int)list->vector.x % 64) * e->texture[tex].bpp / 8) + ((int)x * e->texture[tex].sl);
-					color = e->texture[tex].img[pos] + \
-							e->texture[tex].img[pos + 1] * 256 \
-							+ e->texture[tex].img[pos + 2] * 65536;
-					pixel_put(e, num, list->wfloorbot, color, list->vector.dist);
-				}
-			}
-			x += pas;
-			list->wfloorbot = list->wfloorbot - 1;
-		}
-		pas = ((float)BLOC / ((list->wceiltop + list->wceilev) - (list->wceilbot - list->wceilsv)));
-		pas *= ((512.0 - (float)list->wallc) / BLOC);
-		x = 64 - (list->wceilsv * pas);
-		x += ( x > 64.0 ? -64.0 : 0);
-		x += ( x < 0 ? 64 : 0);
-		while (list->wceilbot <= list->wceiltop && list->wceilbot < e->img.height && list->wceilbot >= 0 && list->wallc < 512)
-		{
-			x += ( x > 64.0 ? -64.0 : 0);
-			x += ( x < 0 ? 64 : 0);
-			if (list->wceilbot < e->img.height && list->wceilbot >= 0 && x >= 0 && x <= 64)
-			{
-				if (list->side == 'v')
-				{
-					pos = (((int)list->vector.y % 64) * e->texture[tex + 1].bpp / 8) + ((int)x * e->texture[tex + 1].sl);
-					color = e->texture[tex + 1].img[pos] + \
-							e->texture[tex + 1].img[pos + 1] * 256 \
-							+ e->texture[tex + 1].img[pos + 2] * 65536;
-					pixel_put(e, num, list->wceilbot, color, list->vector.dist);
-				}
-				else
-				{
-					pos = (((int)list->vector.x % 64) * e->texture[tex].bpp / 8) + ((int)x * e->texture[tex].sl);
-					color = e->texture[tex].img[pos] + \
-							e->texture[tex].img[pos + 1] * 256 \
-							+ e->texture[tex].img[pos + 2] * 65536;
-					pixel_put(e, num, list->wceilbot, color, list->vector.dist);
-				}
-			}
-			x -= pas;
-			list->wceilbot = list->wceilbot + 1;
-		}
 		while (list->ceilbot <= list->ceiltop && list->ceilbot < e->img.height && list->wallc)
 		{
 			if (list->ceilbot < e->img.height && list->ceilbot >= 0)
-				pixel_put(e, num, list->ceilbot, 0x555555, list->vector.dist);
+				pixel_put(e, num, list->ceilbot, 0x555555);
 			list->ceilbot = list->ceilbot + 1;
 		}
+		e->vy = (int)list->vector.y % 64;
+		e->vx = (int)list->vector.x % 64;
+		draw_wallf(e, list, num);
+		draw_wallc(e, list, num);
 		x1 = (int)list->vector.x % 64;
 		y1 = (int)list->vector.y % 64;
 		ancientx = list->vector.x;
 		ancienty = list->vector.y;
-		ancientside = list->side;
 		list = list->next;
 	}
 }
@@ -250,9 +251,7 @@ void	line_cleaner(t_env *e, t_vectlst *blist, int num)
 		e->hc = calc_ceil(&list, e, wallc, botc);
 		e->hf = calc_wfloor(&list, e, &wallf, &botf);
 		e->hc = calc_wceil(&list, e, &wallc, &botc);
-		list->wallc = wallc;
-		list->wallf = wallf;
-		e->line[num].iter = e->line[num].iter + 1;
+		e->line[num].iter++;
 		list = list->next;
 	}
 	display_test(e, blist, num);

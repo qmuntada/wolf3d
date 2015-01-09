@@ -46,6 +46,7 @@ void	display_sprite(t_env *e, int n, float pas)
 
 	e->slist.s[n].uvx = 0;
 	x = e->slist.s[n].botx - 1;
+	e->dist = e->slist.s[n].dist;
 	while (++x < e->slist.s[n].topx)
 	{
 		y = e->slist.s[n].topy - 1;
@@ -64,7 +65,7 @@ void	display_sprite(t_env *e, int n, float pas)
 						+ e->texture[e->slist.s[n].texture].img[pos + 2] * 65536;
 				if (color != 0x980088)
 				{
-					pixel_put(e, x, y, color, e->slist.s[n].dist);
+					pixel_put(e, x, y, color);
 					if (x == e->img.width / 2 && y == e->img.height / 2)
 						e->slist.s[n].onsight = 1;
 				}
