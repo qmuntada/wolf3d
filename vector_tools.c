@@ -3,8 +3,8 @@
 
 void		*vect_init(t_vectlst **list)
 {
-	(**list).floorsv = 0;
 	(**list).floorev = 0;
+	(**list).floorsv = 0;
 	(**list).floorbot = 0;
 	(**list).floortop = 0;
 	(**list).wfloorsv = 0;

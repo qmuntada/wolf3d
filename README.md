@@ -1,4 +1,5 @@
-wolf3d
+Projet WOLF3D pour l'ecole 42.
+Realise a l'aide de la minilibx.
 
 Change the define in wolf.h to switch X11 version (LINUX or MAC)
 

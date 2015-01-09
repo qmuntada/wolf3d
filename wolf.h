@@ -69,14 +69,14 @@ typedef struct			s_vectlst
 {
 	t_vector			vector;
 	char				side;
-	int					floorbot;
 	int					floorsv;
-	int					floortop;
 	int					floorev;
-	int					ceilbot;
+	int					floorbot;
+	int					floortop;
 	int					ceilsv;
-	int					ceiltop;
 	int					ceilev;
+	int					ceilbot;
+	int					ceiltop;
 	int					wfloorbot;
 	int					wfloorsv;
 	int					wfloortop;

@@ -12,3 +12,19 @@ int		jump(t_env *e)
 	}
 	return (1);
 }
+
+void	pixel_put(t_env *e, int x, int y, int color, int dist)
+{
+	int		pos;
+	float	div;
+
+	if (x >= 0 && x < e->img.width && y >= 0 && y < e->img.height)
+	{
+		pos = (x * e->img.bpp / 8) + (y * e->img.sl);
+		div = 1;
+		div += (float)dist / 75;
+		e->img.img[pos] = (color % 256) / div;
+		e->img.img[pos + 1] = ((color >> 8) % 256) / div;
+		e->img.img[pos + 2] = ((color >> 16) % 256) / div;
+	}
+}

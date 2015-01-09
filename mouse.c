@@ -12,7 +12,7 @@ int		mouse(int x, int y, t_env *e)
 	if (y != e->img.height / 2)
 	{
 		y2 = (float)(((e->img.height / 2.0) - y) / 2.0) * (RSPEED / 5);
-		if (y2 + e->img.center > -e->img.height && y2 + e->img.center < e->img.height * 2)
+		if (y2 + e->img.center > 0 && y2 + e->img.center < e->img.height)
 			e->img.center += y2;
 	}
 	e->p.angle += (e->p.angle > 360 ? -360 : 0);

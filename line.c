@@ -1,22 +1,6 @@
 
 # include "wolf.h"
 
-void	pixel_put(t_env *e, int x, int y, int color, int dist)
-{
-	int		pos;
-	float	div;
-
-	if (x >= 0 && x < e->img.width && y >= 0 && y < e->img.height)
-	{
-		pos = (x * e->img.bpp / 8) + (y * e->img.sl);
-		div = 1;
-		div += (float)dist / 100;
-		e->img.img[pos] = (color % 256) / div;
-		e->img.img[pos + 1] = ((color >> 8) % 256) / div;
-		e->img.img[pos + 2] = ((color >> 16) % 256) / div;
-	}
-}
-
 int		calc_wfloor(t_vectlst **list, t_env *e, int *wallf, int *fbot)
 {
 	(**list).wfloorbot = (e->img.center + ((e->p.eyes * e->img.dist) / (**list).vector.dist) / 2);
@@ -144,7 +128,7 @@ void		display_test(t_env *e, t_vectlst *list, int num)
 		x1 += (x1 < 0 ? 64 : 0);
 		y1 += (y1 > 64.0 ? -64.0 : 0);
 		y1 += (y1 < 0 ? 64 : 0);
-		tex = e->map.texture[(int)floor(list->vector.y / BLOC)][(int)floor(list->vector.x / BLOC)] * 4 + 1;
+		tex = e->map.texture[(int)floor(ancienty / BLOC)][(int)floor(ancientx / BLOC)] * 4 + 1;
 		while (list->floorbot >= list->floortop && list->floortop >= 0)
 		{
 			x1 += (x1 > 64.0 ? -64.0 : 0);
@@ -249,14 +233,13 @@ void	line_cleaner(t_env *e, t_vectlst *blist, int num)
 	int			botf;
 	int			botc;
 	int			wallc;
-	int			xtest;
 
 	list = blist;
 	e->line[num].iter = 0;
 	wallf = e->map.floor[(int)floor(e->p.y / BLOC)][(int)floor(e->p.x / BLOC)];
 	wallc = e->map.ceiling[(int)floor(e->p.y / BLOC)][(int)floor(e->p.x / BLOC)];
-	botf = (e->img.center + ((e->p.eyes * e->img.dist) / list->vector.dist) / 2) - (((e->p.eyes * (e->img.dist)) / list->vector.dist) * (wallf / e->p.eyes) / 2);
-	botc = (e->img.center + ((e->p.eyes * e->img.dist) / list->vector.dist) / 2) - (((e->p.eyes * (e->img.dist)) / list->vector.dist) * (wallc / e->p.eyes) / 2);
+	botf = e->img.height;
+	botc = 0;
 	e->hf = e->img.height;
 	e->hc = 0;
 	while (list && e->hf > e->hc)
@@ -265,24 +248,6 @@ void	line_cleaner(t_env *e, t_vectlst *blist, int num)
 		list->hf = e->hf;
 		e->hf = calc_floor(&list, e, wallf, botf);
 		e->hc = calc_ceil(&list, e, wallc, botc);
-		if (e->line[num].iter == 0 && e->hf < e->img.height)
-		{
-			xtest = e->img.height;
-			while (xtest > e->hf)
-			{
-				pixel_put(e, num, xtest, 0xBBBBBB, 0);
-				xtest--;
-			}
-		}
-		if (e->line[num].iter == 0 && e->hc > 0)
-		{
-			xtest = 0;
-			while (xtest < e->hc)
-			{
-				pixel_put(e, num, xtest, 0x555555, 0);
-				xtest++;
-			}
-		}
 		e->hf = calc_wfloor(&list, e, &wallf, &botf);
 		e->hc = calc_wceil(&list, e, &wallc, &botc);
 		list->wallc = wallc;
@@ -291,9 +256,4 @@ void	line_cleaner(t_env *e, t_vectlst *blist, int num)
 		list = list->next;
 	}
 	display_test(e, blist, num);
-	while (e->hf > e->hc && e->hf >= 0 && e->hf <= e->img.height)
-	{
-		pixel_put(e, num, e->hf, 0xFFFFFF, 0);
-		e->hf = e->hf - 1;
-	}
 }
