@@ -41,8 +41,6 @@ void	display_sprite(t_env *e, int n, float pas)
 	float	y;
 	int		toplimit;
 	int		botlimit;
-	int		pos;
-	int		color;
 
 	e->slist.s[n].uvx = 0;
 	x = e->slist.s[n].botx - 1;
@@ -58,18 +56,7 @@ void	display_sprite(t_env *e, int n, float pas)
 		while (++y < e->slist.s[n].boty)
 		{
 			if (y >= toplimit && y <= botlimit && x >= 0 && x < e->img.width && y >= 0 && y < e->img.height)
-			{
-				pos = ((((int)e->slist.s[n].uvx % 64) * e->texture[e->slist.s[n].texture].bpp) / 8) + (((int)e->slist.s[n].uvy % 64) * e->texture[e->slist.s[n].texture].sl);
-				color = e->texture[e->slist.s[n].texture].img[pos] + \
-						e->texture[e->slist.s[n].texture].img[pos + 1] * 256 \
-						+ e->texture[e->slist.s[n].texture].img[pos + 2] * 65536;
-				if (color != 0x980088)
-				{
-					pixel_put(e, x, y, color);
-					if (x == e->img.width / 2 && y == e->img.height / 2)
-						e->slist.s[n].onsight = 1;
-				}
-			}
+				render_points(e, x, y, n);
 			e->slist.s[n].uvy += pas;
 		}
 		e->slist.s[n].uvx += pas;

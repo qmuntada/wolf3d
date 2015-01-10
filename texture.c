@@ -24,7 +24,7 @@ char	**init_texture_parser(t_env *e, char **texture)
 	texture[17] = "texture/floor5.xpm";
 	texture[18] = "texture/wall2h.xpm";
 	texture[19] = "texture/wall2v.xpm";
-	texture[20] = "texture/ceil1.xpm";
+	texture[20] = "texture/ceil2.xpm";
 	texture[21] = "texture/floor2.xpm";
 	texture[22] = "texture/wall3h.xpm";
 	texture[23] = "texture/wall3v.xpm";
@@ -32,7 +32,7 @@ char	**init_texture_parser(t_env *e, char **texture)
 	texture[25] = "texture/floor6.xpm";
 	texture[26] = "texture/wall2h.xpm";
 	texture[27] = "texture/wall2v.xpm";
-	texture[28] = "texture/ceil1.xpm";
+	texture[28] = "texture/ceil2.xpm";
 	texture[29] = "texture/sprite1.xpm";
 	return (texture);
 }

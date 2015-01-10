@@ -199,6 +199,8 @@ typedef struct			s_env
 	int					vx;
 	int					vy;
 	int					px;
+	float				ax;
+	float				ay;
 }						t_env;
 
 typedef struct	s_event_list
@@ -265,5 +267,10 @@ void					sprite_display(t_env *e);
 void					pixel_put(t_env *e, int x, int y, int color);
 float					get_sprite_coord(t_env *e, int n);
 void					display_sprite(t_env *e, int n, float pas);
+void					display_line(t_env *e, t_vectlst *list, int num);
+void					render_pointwv(t_env *e, int num, int dist, int tex);
+void					render_pointwh(t_env *e, int num, int dist, int tex);
+void					render_pointfc(t_env *e, int num, int dist, int tex);
+void					render_points(t_env *e, int x, int y, int n);
 
 #endif
