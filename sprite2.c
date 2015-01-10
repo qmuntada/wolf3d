@@ -44,7 +44,7 @@ void	display_sprite(t_env *e, int n, float pas)
 
 	e->slist.s[n].uvx = 0;
 	x = e->slist.s[n].botx - 1;
-	e->dist = e->slist.s[n].dist;
+	e->distt = e->slist.s[n].dist;
 	while (++x < e->slist.s[n].topx)
 	{
 		y = e->slist.s[n].topy - 1;

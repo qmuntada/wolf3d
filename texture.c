@@ -5,14 +5,14 @@ char	**init_texture_parser(t_env *e, char **texture)
 {
 	e->texture = malloc(sizeof(t_img) * 30);
 	texture = malloc(sizeof(char *) * 30);
-	texture[1] = "texture/ceil1.xpm";
+	texture[1] = "texture/ceil4.xpm";
 	texture[2] = "texture/wall1h.xpm";
 	texture[3] = "texture/wall1v.xpm";
 	texture[4] = "texture/ceil1.xpm";
 	texture[5] = "texture/floor1.xpm";
 	texture[6] = "texture/wall3h.xpm";
 	texture[7] = "texture/wall3v.xpm";
-	texture[8] = "texture/ceil1.xpm";
+	texture[8] = "texture/ceil3.xpm";
 	texture[9] = "texture/floor3.xpm";
 	texture[10] = "texture/wall4h.xpm";
 	texture[11] = "texture/wall4v.xpm";
@@ -28,7 +28,7 @@ char	**init_texture_parser(t_env *e, char **texture)
 	texture[21] = "texture/floor2.xpm";
 	texture[22] = "texture/wall3h.xpm";
 	texture[23] = "texture/wall3v.xpm";
-	texture[24] = "texture/ceil1.xpm";
+	texture[24] = "texture/ceil3.xpm";
 	texture[25] = "texture/floor6.xpm";
 	texture[26] = "texture/wall2h.xpm";
 	texture[27] = "texture/wall2v.xpm";

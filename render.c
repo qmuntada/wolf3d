@@ -9,15 +9,14 @@ void	pixel_put(t_env *e, int x, int y, int color)
 	if (x >= 0 && x < e->img.width && y >= 0 && y < e->img.height)
 	{
 		pos = (x * e->img.bpp / 8) + (y * e->img.sl);
-		div = 1;
-		div += (float)e->dist / 50;
+		div = 1 + (float)e->distt / 50;
 		e->img.img[pos] = (color % 256) / div;
 		e->img.img[pos + 1] = ((color >> 8) % 256) / div;
 		e->img.img[pos + 2] = ((color >> 16) % 256) / div;
 	}
 }
 
-void		render_pointwv(t_env *e, int num, int dist, int tex)
+void		render_pointwv(t_env *e, int num, int tex)
 {
 	int		pos;
 	int		color;
@@ -29,7 +28,7 @@ void		render_pointwv(t_env *e, int num, int dist, int tex)
 	pixel_put(e, num, e->px, color);
 }
 
-void		render_pointwh(t_env *e, int num, int dist, int tex)
+void		render_pointwh(t_env *e, int num, int tex)
 {
 	int		pos;
 	int		color;
@@ -42,7 +41,7 @@ void		render_pointwh(t_env *e, int num, int dist, int tex)
 }
 
 
-void		render_pointfc(t_env *e, int num, int dist, int tex)
+void		render_pointfc(t_env *e, int num, int tex)
 {
 	int		pos;
 	int		color;
