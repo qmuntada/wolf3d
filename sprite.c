@@ -6,12 +6,13 @@ void	get_sprite_data(t_env *e, char **data, int n)
 	e->slist.s[n].y = (float)ft_atoi(data[0]) * BLOC + 32;
 	e->slist.s[n].x = (float)ft_atoi(data[1]) * BLOC + 32;
 	e->slist.s[n].z = (float)ft_atoi(data[2]);
-	e->slist.s[n].alive = ft_atoi(data[3]);
-	e->slist.s[n].mobile = ft_atoi(data[4]);
-	e->slist.s[n].attitude = ft_atoi(data[5]);
-	e->slist.s[n].texture = ft_atoi(data[6]);
-	e->slist.s[n].size = ft_atoi(data[7]);
-	e->slist.s[n].onsight = 0;
+	e->slist.s[n].life = 100.0;
+	e->slist.s[n].mobile = ft_atoi(data[3]);
+	e->slist.s[n].attitude = ft_atoi(data[4]);
+	e->slist.s[n].texture = ft_atoi(data[5]);
+	e->slist.s[n].size = ft_atoi(data[6]);
+	e->slist.s[n].state = 0;
+	e->slist.s[n].attack = 0;
 }
 
 void	get_sprite_list(t_env *e, char **data, int *i)
@@ -75,9 +76,12 @@ void	sprite_calc(t_env *e)
 	while (++n < e->slist.n)
 	{
 		pas = get_sprite_coord(e, n);
-		e->slist.s[n].onsight = 0;
-		if ((e->slist.s[n].botx >= 0 && e->slist.s[n].botx < e->img.width) || (e->slist.s[n].topx >= 0 && e->slist.s[n].topx < e->img.width) || (e->slist.s[n].botx < 0 && e->slist.s[n].topx > e->img.width))
+		if ((e->slist.s[n].botx >= 0 && e->slist.s[n].botx < e->img.width) \
+			|| (e->slist.s[n].topx >= 0 && e->slist.s[n].topx < e->img.width) \
+			|| (e->slist.s[n].botx < 0 && e->slist.s[n].topx > e->img.width))
+		{
 			display_sprite(e, n, pas);
+		}
 	}
 }
 

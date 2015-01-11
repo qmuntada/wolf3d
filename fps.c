@@ -15,5 +15,8 @@ void	fps(t_env *e)
 	}
 	else
 		fps++;
-	mlx_string_put(e->mlx, e->win, 5, 12, 0xFFFFFF, ft_itoa(fps_2));
+	mlx_string_put(e->mlx, e->win, 5, 12, 0xFFFFFF, "fps :");
+	mlx_string_put(e->mlx, e->win, 40, 12, 0xFFFFFF, ft_itoa(fps_2));
+	mlx_string_put(e->mlx, e->win, 5, 30, 0xFFFFFF, "life :");
+	mlx_string_put(e->mlx, e->win, 50, 30, 0xFFFFFF, ft_itoa(e->p.life));
 }

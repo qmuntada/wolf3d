@@ -107,11 +107,14 @@ typedef struct			s_player
 	float				foot;
 	float				angle;
 	float				bobbing;
+	float				life;
 	int					forward;
 	int					straff;
 	int					jump;
 	int					jump2;
 	int					crouch;
+	int					shoot;
+	int					wpstate;
 }						t_player;
 
 typedef struct			s_map
@@ -142,11 +145,12 @@ typedef struct			s_img
 
 typedef struct			s_sprite
 {
-	int					alive;
+	float				life;
 	int					mobile;
 	int					attitude;
-	int					onsight;
 	int					size;
+	int					state;
+	int					attack;
 	float				x;
 	float				y;
 	float				z;
@@ -204,6 +208,9 @@ typedef struct			s_env
 	float				ay;
 	float				distf;
 	float				distc;
+	int					ntouch;
+	int					delay;
+	int					delay2;
 }						t_env;
 
 typedef struct	s_event_list
@@ -264,6 +271,7 @@ void					movement(t_env *e);
 void					pre_comput(t_env *e, float ray_angle);
 int						jump(t_env *e);
 int						mouse(int x, int y, t_env *e);
+int						mouse2(int button, int x, int y, t_env *e);
 void					cursor_move(void *mlx, int x, int y);
 void					get_sprite_list(t_env *e, char **data, int *i);
 void					sprite_display(t_env *e);
@@ -275,5 +283,7 @@ void					render_pointwv(t_env *e, int num, int tex);
 void					render_pointwh(t_env *e, int num, int tex);
 void					render_pointfc(t_env *e, int num, int tex);
 void					render_points(t_env *e, int x, int y, int n);
+void					weapon_handling(t_env *e);
+void					sprite_handling(t_env *e);
 
 #endif

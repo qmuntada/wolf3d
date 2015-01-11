@@ -20,6 +20,13 @@ int		mouse(int x, int y, t_env *e)
 	return (1);
 }
 
+int		mouse2(int button, int x, int y, t_env *e)
+{
+	if (button == 1 && e->p.shoot == 0)
+		e->p.shoot = 1;
+	return (1);
+}
+
 void	cursor_move(void *mlx_ptr, int x, int y)
 {
 	t_xvar*		xvar;

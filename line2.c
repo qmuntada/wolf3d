@@ -8,7 +8,7 @@ void		draw_wallf(t_env *e, t_vectlst *list, int num)
 
 	pas = ((float)BLOC / ((list->wfloorbot + list->wfloorsv) - (list->wfloortop - list->wfloorev)));
 	pas *= ((float)list->wallf / BLOC);
-	e->x = 0 + (list->wfloorsv * pas);
+	e->x = (list->wfloorsv * pas);
 	tex = e->map.texture[(int)floor(list->vector.y / BLOC)][(int)floor(list->vector.x / BLOC)] * 4 + 2;
 	e->px = list->wfloorbot;
 	while (e->px >= list->wfloortop)
@@ -114,11 +114,11 @@ void		display_line(t_env *e, t_vectlst *list, int num)
 
 	e->ax = e->p.x;
 	e->ay = e->p.y;
-	e->vx = 32;
-	e->vy = 32;
+	e->vx = 0;
+	e->vy = 0;
 	n = e->line[num].iter;
-	e->distc = 0;
-	e->distf = 0;
+	e->distc = list->vector.dist;
+	e->distf = list->vector.dist;
 	while (list && n-- > 0)
 	{
 		e->dist = list->vector.dist;

@@ -97,7 +97,6 @@ void	movement(t_env *e)
 
 int		key_press(int keycode, t_env *e)
 {
-	//printf("key %d\n", keycode);
 	if (keycode == ESC)
 	{
 		mlx_destroy_window(e->mlx, e->win);
@@ -116,7 +115,6 @@ int		key_press(int keycode, t_env *e)
 
 int		key_release(int keycode, t_env *e)
 {
-	//printf("release %d\n", keycode);
 	if (keycode == W || keycode == S)
 		e->p.forward = 0;
 	else if (keycode == A || keycode == D)

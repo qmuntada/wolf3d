@@ -19,6 +19,9 @@ void		get_p(t_env *e, char **data, int *i)
 	e->p.jump = 0;
 	e->p.crouch = 0;
 	e->p.bobbing = 0;
+	e->p.shoot = 0;
+	e->p.wpstate = 0;
+	e->p.life = 100.0;
 }
 
 static int			**get_map(t_env *e, char **data, int *i)

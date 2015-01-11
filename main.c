@@ -24,10 +24,16 @@ static void		gravity(t_env *e)
 
 static int		expose_hook(t_env *e)
 {
+	e->ntouch = -1;
+	e->delay = (e->delay == 0 ? 1 : 0);
+	e->delay2 = (e->delay + e->delay2 == 1 ? 1 : 0);
 	calc_img(e);
 	mlx_put_image_to_window(e->mlx, e->win, e->img.img_ptr, 0, 0);
 	movement(e);
 	gravity(e);
+	e->distt = 75 + cos(e->p.bobbing) * 10;
+	weapon_handling(e);
+	sprite_handling(e);
 	fps(e);
 	cursor_move(e->mlx, e->img.width / 2, e->img.height / 2);
 	return (1);
@@ -42,6 +48,7 @@ int				main(int ac, char **av)
 	mlx_hook(e.win, KeyPress, KeyPressMask, &key_press, &e);
 	mlx_hook(e.win, KeyRelease, KeyReleaseMask, &key_release, &e);
 	mlx_hook(e.win, MotionNotify, PointerMotionMask, &mouse, &e);
+	mlx_hook(e.win, ButtonPress, ButtonPressMask, &mouse2, &e);
 	mlx_loop_hook(e.mlx, &expose_hook, &e);
 	mlx_loop(e.mlx);
 	return (1);

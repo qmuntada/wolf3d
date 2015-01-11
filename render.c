@@ -9,7 +9,7 @@ void	pixel_put(t_env *e, int x, int y, int color)
 	if (x >= 0 && x < e->img.width && y >= 0 && y < e->img.height)
 	{
 		pos = (x * e->img.bpp / 8) + (y * e->img.sl);
-		div = 1 + (float)e->distt / 50;
+		div = 1 + (e->distt / 50.0);
 		e->img.img[pos] = (color % 256) / div;
 		e->img.img[pos + 1] = ((color >> 8) % 256) / div;
 		e->img.img[pos + 2] = ((color >> 16) % 256) / div;
@@ -58,14 +58,14 @@ void	render_points(t_env *e, int x, int y, int n)
 	int		pos;
 	int		color;
 
-	pos = ((((int)e->slist.s[n].uvx % 64) * e->texture[e->slist.s[n].texture].bpp) / 8) + (((int)e->slist.s[n].uvy % 64) * e->texture[e->slist.s[n].texture].sl);
-	color = e->texture[e->slist.s[n].texture].img[pos] + \
-			e->texture[e->slist.s[n].texture].img[pos + 1] * 256 \
-			+ e->texture[e->slist.s[n].texture].img[pos + 2] * 65536;
+	pos = ((((int)e->slist.s[n].uvx % 64) * e->texture[e->slist.s[n].texture + e->slist.s[n].state].bpp) / 8) + (((int)e->slist.s[n].uvy % 64) * e->texture[e->slist.s[n].texture + e->slist.s[n].state].sl);
+	color = e->texture[e->slist.s[n].texture + e->slist.s[n].state].img[pos] + \
+			e->texture[e->slist.s[n].texture + e->slist.s[n].state].img[pos + 1] * 256 \
+			+ e->texture[e->slist.s[n].texture + e->slist.s[n].state].img[pos + 2] * 65536;
 	if (color != 0x980088)
 	{
 		pixel_put(e, x, y, color);
 		if (x == e->img.width / 2 && y == e->img.height / 2)
-			e->slist.s[n].onsight = 1;
+			e->ntouch = n;
 	}
 }
