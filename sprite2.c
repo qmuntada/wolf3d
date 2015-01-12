@@ -51,7 +51,7 @@ void	display_sprite(t_env *e, int n, float pas)
 		e->slist.s[n].uvy = 0;
 		botlimit = e->img.height;
 		toplimit = 0;
-		if (e->slist.s[n].dist > 24)
+		if (e->slist.s[n].dist > 24);
 			find_limit(e, x, &toplimit, &botlimit, n);
 		while (++y < e->slist.s[n].boty)
 		{

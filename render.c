@@ -1,7 +1,7 @@
 
 #include "wolf.h"
 
-void	pixel_put(t_env *e, int x, int y, int color)
+void	pixel_put(t_env *e, int x, int y)
 {
 	int		pos;
 	float	div;
@@ -10,61 +10,59 @@ void	pixel_put(t_env *e, int x, int y, int color)
 	{
 		pos = (x * e->img.bpp / 8) + (y * e->img.sl);
 		div = 1 + (e->distt / 50.0);
-		e->img.img[pos] = (color % 256) / div;
-		e->img.img[pos + 1] = ((color >> 8) % 256) / div;
-		e->img.img[pos + 2] = ((color >> 16) % 256) / div;
+		e->img.img[pos] = (e->color % 256) / div;
+		e->img.img[pos + 1] = ((e->color >> 8) % 256) / div;
+		e->img.img[pos + 2] = ((e->color >> 16) % 256) / div;
 	}
 }
 
 void		render_pointwv(t_env *e, int num, int tex)
 {
 	int		pos;
-	int		color;
 
-	pos = ((e->vy) * e->texture[tex + 1].bpp / 8) + ((int)e->x * e->texture[tex + 1].sl);
-	color = e->texture[tex].img[pos] + \
-			e->texture[tex].img[pos + 1] * 256 \
-			+ e->texture[tex].img[pos + 2] * 65536;
-	pixel_put(e, num, e->px, color);
+	pos = ((e->vy) * e->tex[tex + 1].bpp / 8) + ((int)e->x * e->tex[tex + 1].sl);
+	e->color = e->tex[tex].img[pos] + \
+			   e->tex[tex].img[pos + 1] * 256 \
+			   + e->tex[tex].img[pos + 2] * 65536;
+	pixel_put(e, num, e->px);
 }
 
 void		render_pointwh(t_env *e, int num, int tex)
 {
 	int		pos;
-	int		color;
 
-	pos = ((e->vx) * e->texture[tex + 1].bpp / 8) + ((int)e->x * e->texture[tex + 1].sl);
-	color = e->texture[tex].img[pos] + \
-			e->texture[tex].img[pos + 1] * 256 \
-			+ e->texture[tex].img[pos + 2] * 65536;
-	pixel_put(e, num, e->px, color);
+	pos = ((e->vx) * e->tex[tex + 1].bpp / 8) + ((int)e->x * e->tex[tex + 1].sl);
+	e->color = e->tex[tex].img[pos] + \
+			   e->tex[tex].img[pos + 1] * 256 \
+			   + e->tex[tex].img[pos + 2] * 65536;
+	pixel_put(e, num, e->px);
 }
 
 
 void		render_pointfc(t_env *e, int num, int tex)
 {
 	int		pos;
-	int		color;
 
-	pos = ((int)e->x * e->texture[tex].bpp / 8) + ((int)e->y * e->texture[tex].sl);
-	color = e->texture[tex].img[pos] + \
-			e->texture[tex].img[pos + 1] * 256 \
-			+ e->texture[tex].img[pos + 2] * 65536;
-	pixel_put(e, num, e->px, color);
+	pos = ((int)e->x * e->tex[tex].bpp / 8) + ((int)e->y * e->tex[tex].sl);
+	e->color = e->tex[tex].img[pos] + \
+			   e->tex[tex].img[pos + 1] * 256 \
+			   + e->tex[tex].img[pos + 2] * 65536;
+	pixel_put(e, num, e->px);
 }
 
 void	render_points(t_env *e, int x, int y, int n)
 {
 	int		pos;
-	int		color;
 
-	pos = ((((int)e->slist.s[n].uvx % 64) * e->texture[e->slist.s[n].texture + e->slist.s[n].state].bpp) / 8) + (((int)e->slist.s[n].uvy % 64) * e->texture[e->slist.s[n].texture + e->slist.s[n].state].sl);
-	color = e->texture[e->slist.s[n].texture + e->slist.s[n].state].img[pos] + \
-			e->texture[e->slist.s[n].texture + e->slist.s[n].state].img[pos + 1] * 256 \
-			+ e->texture[e->slist.s[n].texture + e->slist.s[n].state].img[pos + 2] * 65536;
-	if (color != 0x980088)
+	pos = ((((int)e->slist.s[n].uvx) * e->tex[e->slist.s[n].texture \
+		+ e->slist.s[n].state].bpp) / 8) + (((int)e->slist.s[n].uvy) * \
+		e->tex[e->slist.s[n].texture + e->slist.s[n].state].sl);
+	e->color = e->tex[e->slist.s[n].texture + e->slist.s[n].state].img[pos] + \
+			   e->tex[e->slist.s[n].texture + e->slist.s[n].state].img[pos + 1] * 256 \
+			   + e->tex[e->slist.s[n].texture + e->slist.s[n].state].img[pos + 2] * 65536;
+	if (e->color != 0x980088)
 	{
-		pixel_put(e, x, y, color);
+		pixel_put(e, x, y);
 		if (x == e->img.width / 2 && y == e->img.height / 2)
 			e->ntouch = n;
 	}

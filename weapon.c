@@ -4,7 +4,6 @@
 void	display_weapon(t_env *e, int state)
 {
 	int		pos;
-	int		color;
 	float	pas;
 	float	x;
 	float	y;
@@ -22,12 +21,12 @@ void	display_weapon(t_env *e, int state)
 		e->x = e->img.width / 2;
 		while (x < 128)
 		{
-			pos = ((int)x * e->texture[state].bpp / 8) + ((int)y * e->texture[state].sl);
-			color = e->texture[state].img[pos] + \
-					e->texture[state].img[pos + 1] * 256 \
-					+ e->texture[state].img[pos + 2] * 65536;
-			if (color != 0x980088)
-				pixel_put(e, e->x + (bob * 25), e->y + abs(bob * 75), color);
+			pos = ((int)x * e->tex[state].bpp / 8) + ((int)y * e->tex[state].sl);
+			e->color = e->tex[state].img[pos] + \
+					e->tex[state].img[pos + 1] * 256 \
+					+ e->tex[state].img[pos + 2] * 65536;
+			if (e->color != 0x980088)
+				pixel_put(e, e->x + (bob * 25), e->y + abs(bob * 75));
 			e->x += 1;
 			x += pas;
 		}

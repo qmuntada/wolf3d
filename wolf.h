@@ -146,7 +146,6 @@ typedef struct			s_img
 typedef struct			s_sprite
 {
 	float				life;
-	int					mobile;
 	int					attitude;
 	int					size;
 	int					state;
@@ -191,7 +190,7 @@ typedef struct			s_env
 	t_player			p;
 	t_map				map;
 	t_img				img;
-	t_img				*texture;
+	t_img				*tex;
 	t_line				*line;
 	t_precomp			precomp;
 	t_sprite_list		slist;
@@ -211,6 +210,9 @@ typedef struct			s_env
 	int					ntouch;
 	int					delay;
 	int					delay2;
+	int					floorx;
+	int					floory;
+	int					color;
 }						t_env;
 
 typedef struct	s_event_list
@@ -275,7 +277,7 @@ int						mouse2(int button, int x, int y, t_env *e);
 void					cursor_move(void *mlx, int x, int y);
 void					get_sprite_list(t_env *e, char **data, int *i);
 void					sprite_display(t_env *e);
-void					pixel_put(t_env *e, int x, int y, int color);
+void					pixel_put(t_env *e, int x, int y);
 float					get_sprite_coord(t_env *e, int n);
 void					display_sprite(t_env *e, int n, float pas);
 void					display_line(t_env *e, t_vectlst *list, int num);

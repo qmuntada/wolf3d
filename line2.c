@@ -73,7 +73,7 @@ void		draw_floor(t_env *e, t_vectlst *list, int num)
 		if (e->px < e->img.height && e->px >= 0 && e->x >= 0 && e->x <= 64 && e->y >= 0 && e->y <= 64)
 			render_pointfc(e, num, tex);
 		e->distt += pasdist;
-		e->px = e->px - 1;
+		e->px -= 1;
 		e->x += pasx;
 		e->y += pasy;
 	}
@@ -100,7 +100,7 @@ void		draw_ceil(t_env *e, t_vectlst *list, int num)
 	{
 		if (e->px < e->img.height && e->px >= 0 && e->x >= 0 && e->x <= 64 && e->y >= 0 && e->y <= 64)
 			render_pointfc(e, num, tex);
-		e->px = e->px + 1;
+		e->px += 1;
 		e->distt += pasdist;
 		e->x += pasx;
 		e->y += pasy;

@@ -7,10 +7,9 @@ void	get_sprite_data(t_env *e, char **data, int n)
 	e->slist.s[n].x = (float)ft_atoi(data[1]) * BLOC + 32;
 	e->slist.s[n].z = (float)ft_atoi(data[2]);
 	e->slist.s[n].life = 100.0;
-	e->slist.s[n].mobile = ft_atoi(data[3]);
-	e->slist.s[n].attitude = ft_atoi(data[4]);
-	e->slist.s[n].texture = ft_atoi(data[5]);
-	e->slist.s[n].size = ft_atoi(data[6]);
+	e->slist.s[n].attitude = ft_atoi(data[3]);
+	e->slist.s[n].texture = ft_atoi(data[4]);
+	e->slist.s[n].size = ft_atoi(data[5]);
 	e->slist.s[n].state = 0;
 	e->slist.s[n].attack = 0;
 }
@@ -96,6 +95,8 @@ void	sprite_display(t_env *e)
 			((sqrt(pow((e->p.x - e->slist.s[x].x), 2.0) + \
 			pow((e->p.y - e->slist.s[x].y), 2.0))) / \
 			((float)BLOC / 64)) / SCALE;
+		if (e->slist.s[x].dist < 16)
+			e->slist.s[x].dist = 16;
 	}
 	sprite_sort(e);
 	sprite_calc(e);

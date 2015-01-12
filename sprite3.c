@@ -56,7 +56,7 @@ void	get_damage(t_env *e)
 {
 	if (e->ntouch != -1 && e->slist.s[e->ntouch].life >= 0 && e->p.wpstate != 0 && e->slist.s[e->ntouch].attitude == 1)
 	{
-		e->slist.s[e->ntouch].life -= (e->p.wpstate == 1 ? 21 : 0);
+		e->slist.s[e->ntouch].life -= (e->p.wpstate == 1 ? 34 : 0);
 		e->slist.s[e->ntouch].state = 4;
 	}
 }

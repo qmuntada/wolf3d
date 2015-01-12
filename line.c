@@ -113,5 +113,6 @@ void	line_cleaner(t_env *e, t_vectlst *blist, int num)
 		e->line[num].iter++;
 		list = list->next;
 	}
-	display_line(e, blist, num);
+	if (blist)
+		display_line(e, blist, num);
 }
