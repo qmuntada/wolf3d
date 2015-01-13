@@ -2,6 +2,9 @@ Projet WOLF3D pour l'ecole 42.
 
 Realise a l'aide de la minilibx.
 
+Compilation sur MAC (pour l'instant pas de Makefile) :
+gcc *.c libft/libft.a -I/usr/X11/include -L/usr/X11/lib -lX11 -lXext -lmlx
+
 Change the define in wolf.h to switch X11 version (LINUX or MAC)
 
 If you think mouse movement is too fast, you can adjust it in wolf.h : just modify the "# define RSPEED (ADJUSTED VALUE)"

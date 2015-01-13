@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/06 18:53:05 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/13 16:29:32 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/01/13 17:50:46 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ typedef struct			s_player
 	float				eyes;
 	float				foot;
 	float				angle;
-	float				bobbing;
+	float				bob;
 	float				life;
 	int					forward;
 	int					straff;
@@ -213,6 +213,13 @@ typedef struct			s_env
 	int					floorx;
 	int					floory;
 	int					color;
+	int					wallf;
+	int					wallc;
+	int					botf;
+	int					botc;
+	int					t;
+	int					bot;
+	int					top;
 }						t_env;
 
 typedef struct	s_event_list
@@ -269,7 +276,10 @@ void					vect_addsort(t_vectlst **blst, t_vector *content, \
 							char side);
 void					line_cleaner(t_env *e, t_vectlst *blist, int num);
 void					vect_clear(t_vectlst **blst);
-void					movement(t_env *e);
+void					movefront(t_env *e);
+void					moveback(t_env *e);
+void					moveleft(t_env *e);
+void					moveright(t_env *e);
 void					pre_comput(t_env *e, float ray_angle);
 int						jump(t_env *e);
 int						mouse(int x, int y, t_env *e);
@@ -287,5 +297,6 @@ void					render_pointfc(t_env *e, int num, int tex);
 void					render_points(t_env *e, int x, int y, int n);
 void					weapon_handling(t_env *e);
 void					sprite_handling(t_env *e);
+void					init_value(t_env *e, float dist);
 
 #endif

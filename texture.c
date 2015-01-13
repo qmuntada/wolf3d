@@ -1,8 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   texture.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/01/13 16:34:31 by qmuntada          #+#    #+#             */
+/*   Updated: 2015/01/13 18:28:35 by qmuntada         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "wolf.h"
 
-char	**init_texture_parser(t_env *e, char **texture)
+char	**init_texture_parser(t_env *e)
 {
+	char	**texture;
+
 	e->tex = malloc(sizeof(t_img) * 63);
 	texture = malloc(sizeof(char *) * 63);
 	texture[1] = "texture/ceil4.xpm";
@@ -67,7 +80,6 @@ char	**init_texture_parser(t_env *e, char **texture)
 	texture[60] = "texture/table1.xpm";
 	texture[61] = "texture/table2.xpm";
 	texture[62] = "texture/ustens1.xpm";
-
 	return (texture);
 }
 
@@ -76,7 +88,7 @@ void	init_texture(t_env *e)
 	char	**texture;
 	int		i;
 
-	texture = init_texture_parser(e, texture);
+	texture = init_texture_parser(e);
 	i = 0;
 	while (++i < 63)
 	{

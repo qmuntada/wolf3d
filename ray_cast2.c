@@ -1,5 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ray_cast2.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/01/13 16:34:02 by qmuntada          #+#    #+#             */
+/*   Updated: 2015/01/13 17:26:32 by qmuntada         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-# include "wolf.h"
+#include "wolf.h"
 
 void	init_vector_hori(t_precomp *prec, t_vector *h)
 {
@@ -15,7 +26,9 @@ void	init_vector_hori(t_precomp *prec, t_vector *h)
 	}
 	h->x = prec->playx + (prec->playy - h->y) / prec->td_angle;
 	h->uvx = (int)h->x % 64;
-	h->dist = ((sqrt(pow((prec->playx - h->x), 2.0) + pow((prec->playy - h->y), 2.0))) * prec->fisheye) / ((float)BLOC / 64);
+	h->dist = ((sqrt(pow((prec->playx - h->x), 2.0) + \
+					pow((prec->playy - h->y), 2.0))) * prec->fisheye) / \
+					((float)BLOC / 64);
 }
 
 void	init_vector_vert(t_precomp *prec, t_vector *v)
@@ -32,5 +45,7 @@ void	init_vector_vert(t_precomp *prec, t_vector *v)
 	}
 	v->y = prec->playy + (prec->playx - v->x) * prec->td_angle;
 	v->uvy = (int)v->y % 64;
-	v->dist = ((sqrt(pow((prec->playx - v->x), 2.0) + pow((prec->playy - v->y), 2.0))) * prec->fisheye) / ((float)BLOC / 64);
+	v->dist = ((sqrt(pow((prec->playx - v->x), 2.0) + \
+					pow((prec->playy - v->y), 2.0))) * prec->fisheye) / \
+					((float)BLOC / 64);
 }

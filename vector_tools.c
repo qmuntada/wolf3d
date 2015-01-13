@@ -1,5 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   vector_tools.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/01/13 16:34:44 by qmuntada          #+#    #+#             */
+/*   Updated: 2015/01/13 17:46:58 by qmuntada         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-# include "wolf.h"
+#include "wolf.h"
 
 void		*vect_init(t_vectlst **list)
 {
@@ -43,7 +54,7 @@ t_vectlst	*vect_new(t_vector *content, char side)
 	return (list);
 }
 
-void	vect_addsort(t_vectlst **blst, t_vector *content, char side)
+void		vect_addsort(t_vectlst **blst, t_vector *content, char side)
 {
 	t_vectlst	*tmp;
 	t_vectlst	*tmp2;
@@ -66,11 +77,11 @@ void	vect_addsort(t_vectlst **blst, t_vector *content, char side)
 		*blst = vect_new(content, side);
 }
 
-void	vect_clear(t_vectlst **blst)
+void		vect_clear(t_vectlst **blst)
 {
 	t_vectlst *list;
 	t_vectlst *tmp;
-	
+
 	list = *blst;
 	tmp = NULL;
 	while (list)

@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pre_computed.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/01/13 16:33:54 by qmuntada          #+#    #+#             */
+/*   Updated: 2015/01/13 17:21:08 by qmuntada         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "wolf.h"
 
@@ -13,5 +24,6 @@ void	pre_comput(t_env *e, float ray)
 	e->precomp.playx = e->p.x;
 	e->precomp.playy = e->p.y;
 	e->precomp.playangle = e->p.angle;
-	e->precomp.fisheye = (cos((e->precomp.playangle - e->precomp.angle) / 180 * M_PI)) / SCALE;
+	e->precomp.fisheye = (cos((e->precomp.playangle - e->precomp.angle) \
+				/ 180 * M_PI)) / SCALE;
 }

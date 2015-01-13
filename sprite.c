@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sprite.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/01/13 16:34:11 by qmuntada          #+#    #+#             */
+/*   Updated: 2015/01/13 18:16:34 by qmuntada         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "wolf.h"
 
@@ -63,13 +74,7 @@ void	sprite_sort(t_env *e)
 void	sprite_calc(t_env *e)
 {
 	int		n;
-	int		y;
-	int		x;
-	float	uvx;
-	float	uvy;
 	float	pas;
-	int		pos;
-	int		color;
 
 	n = -1;
 	while (++n < e->slist.n)

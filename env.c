@@ -1,9 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   env.c                                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/01/13 16:33:10 by qmuntada          #+#    #+#             */
+/*   Updated: 2015/01/13 17:51:46 by qmuntada         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "wolf.h"
 
-void		get_p(t_env *e, char **data, int *i)
+void	get_p(t_env *e, char **data, int *i)
 {
-	char		**p_data;
+	char	**p_data;
 
 	*i = *i + 1;
 	if (!data[*i])
@@ -18,13 +29,13 @@ void		get_p(t_env *e, char **data, int *i)
 	e->p.straff = 0;
 	e->p.jump = 0;
 	e->p.crouch = 0;
-	e->p.bobbing = 0;
+	e->p.bob = 0;
 	e->p.shoot = 0;
 	e->p.wpstate = 0;
 	e->p.life = 100.0;
 }
 
-static int			**get_map(t_env *e, char **data, int *i)
+int		**get_map(t_env *e, char **data, int *i)
 {
 	int		x;
 	int		y;
@@ -43,18 +54,14 @@ static int			**get_map(t_env *e, char **data, int *i)
 		array = ft_strsplit(data[*i + x], ' ');
 		map[x] = malloc(sizeof(int) * e->map.width);
 		y = -1;
-		while (++y < e->map.width)
-		{
-			if (!array[y])
-				err_map();
+		while (++y < e->map.width && array[y])
 			map[x][y] = ft_atoi(array[y]);
-		}
 	}
 	*i = *i + e->map.height - 1;
 	return (map);
 }
 
-static void			analize_map_data(t_env *e, char **data, int len)
+void	analize_map_data(t_env *e, char **data, int len)
 {
 	int		i;
 
@@ -80,7 +87,7 @@ static void			analize_map_data(t_env *e, char **data, int len)
 	}
 }
 
-static void			set_map(t_env *e, int fd)
+void	set_map(t_env *e, int fd)
 {
 	char	*line;
 	char	**map_data;
@@ -104,7 +111,7 @@ static void			set_map(t_env *e, int fd)
 	analize_map_data(e, map_data, lstlen);
 }
 
-void				init_env(t_env *e, int fd)
+void	init_env(t_env *e, int fd)
 {
 	set_map(e, fd);
 	e->img.width = WIDTH;
