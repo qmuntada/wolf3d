@@ -28,12 +28,12 @@ static int		expose_hook(t_env *e)
 	e->delay = (e->delay == 0 ? 1 : 0);
 	e->delay2 = (e->delay + e->delay2 == 1 ? 1 : 0);
 	calc_img(e);
-	mlx_put_image_to_window(e->mlx, e->win, e->img.img_ptr, 0, 0);
-	movement(e);
-	gravity(e);
 	e->distt = 75 + cos(e->p.bobbing) * 10;
 	weapon_handling(e);
 	sprite_handling(e);
+	mlx_put_image_to_window(e->mlx, e->win, e->img.img_ptr, 0, 0);
+	movement(e);
+	gravity(e);
 	fps(e);
 	cursor_move(e->mlx, e->img.width / 2, e->img.height / 2);
 	return (1);

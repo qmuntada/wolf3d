@@ -9,7 +9,7 @@ void	pixel_put(t_env *e, int x, int y)
 	if (x >= 0 && x < e->img.width && y >= 0 && y < e->img.height)
 	{
 		pos = (x * e->img.bpp / 8) + (y * e->img.sl);
-		div = 1 + (e->distt / 50.0);
+		div = 1 + (e->distt / 100.0);
 		e->img.img[pos] = (e->color % 256) / div;
 		e->img.img[pos + 1] = ((e->color >> 8) % 256) / div;
 		e->img.img[pos + 2] = ((e->color >> 16) % 256) / div;
