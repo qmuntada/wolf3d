@@ -5,6 +5,9 @@ Realise a l'aide de la minilibx.
 Compilation sur MAC (pour l'instant pas de Makefile) :
 gcc *.c libft/libft.a -I/usr/X11/include -L/usr/X11/lib -lX11 -lXext -lmlx
 
+Compilation sur LINUX :
+gcc *.c libft/libft.a -L/usr/lib/X11 -lmlx -lXext -lX11 -lm
+
 Change the define in wolf.h to switch X11 version (LINUX or MAC)
 
 If you think mouse movement is too fast, you can adjust it in wolf.h : just modify the "# define RSPEED (ADJUSTED VALUE)"
