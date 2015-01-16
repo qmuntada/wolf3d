@@ -6,26 +6,15 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/06 18:53:05 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/13 17:50:46 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/01/16 17:07:18 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WOLF_H
 # define WOLF_H
 
-# define LINUX
-//# define MAC
-
-# ifdef MAC
-#  include </usr/X11/include/X11/X.h>
-#  include </usr/X11/include/X11/Xlib.h>
-# endif
-
-# ifdef LINUX
-#  include <X11/X.h>
-#  include <X11/Xlib.h>
-# endif
-
+# include <X11/X.h>
+# include <X11/Xlib.h>
 # include <mlx.h>
 # include <unistd.h>
 # include <stdio.h>
@@ -35,15 +24,14 @@
 # include "libft/libft.h"
 # include <time.h>
 
-# define WIDTH 1280 // 640 1280 2560
-# define HEIGHT 720 // 360 720 1440
+# define WIDTH 1280
+# define HEIGHT 720
 # define FOV 60
 # define MSPEED 10
-# define RSPEED 20 // MOUSE SPEED
+# define RSPEED 20
 # define BLOC 64
 # define GRAVITY 15
-# define SCALE 2 // Plus le chiffre est grand, plus le monde paraitra petit
-
+# define SCALE 2
 # define ESC 65307
 # define Q 113
 # define W 119
@@ -222,12 +210,12 @@ typedef struct			s_env
 	int					top;
 }						t_env;
 
-typedef struct	s_event_list
+typedef struct			s_event_list
 {
-	int			mask;
-	int			(*hook)();
-	void		*param;
-}				t_event_list;
+	int					mask;
+	int					(*hook)();
+	void				*param;
+}						t_event_list;
 
 typedef struct			s_win_list
 {
@@ -243,24 +231,23 @@ typedef struct			s_win_list
 	t_event_list		hooks[LASTEvent];
 }						t_win_list;
 
-typedef struct	s_xvar
+typedef struct			s_xvar
 {
-	Display		*display;
-	Window		root;
-	int			screen;
-	int			depth;
-	Visual		*visual;
-	Colormap	cmap;
-	int			private_cmap;
-	t_win_list	*win_list;
-	int			(*loop_hook)();
-	void		*loop_param;
-	int			use_xshm;
-	int			pshm_format;
-	int			do_flush;
-	int			decrgb[6];
-}				t_xvar;
-
+	Display				*display;
+	Window				root;
+	int					screen;
+	int					depth;
+	Visual				*visual;
+	Colormap			cmap;
+	int					private_cmap;
+	t_win_list			*win_list;
+	int					(*loop_hook)();
+	void				*loop_param;
+	int					use_xshm;
+	int					pshm_format;
+	int					do_flush;
+	int					decrgb[6];
+}						t_xvar;
 
 void					err_map(void);
 void					err_texture(void);
