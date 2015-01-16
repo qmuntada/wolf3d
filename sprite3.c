@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:34:26 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/13 18:12:00 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/01/16 17:19:54 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,34 @@ void	sprite_shoot(t_env *e, int mov, int i)
 		e->slist.s[i].attack += (e->slist.s[i].attack == 10 ? -10 : 1);
 }
 
+int		path_correct(t_env *e, int i, int type)
+{
+	int		v;
+
+	if (type == 1)
+	{
+		v = (e->slist.s[i].x > e->p.x ? -3 : 3);
+		if (e->map.floor[(int)e->slist.s[i].y / \
+				BLOC][(int)(e->slist.s[i].x + v) / BLOC] == \
+				e->map.floor[(int)e->slist.s[i].y / \
+				BLOC][(int)e->slist.s[i].x / BLOC])
+		{
+			e->slist.s[i].x += v;
+			return (0);
+		}
+	}
+	v = (e->slist.s[i].y > e->p.y ? -3 : 3);
+	if (e->map.floor[(int)(e->slist.s[i].y + v)/ \
+			BLOC][(int)e->slist.s[i].x / BLOC] == \
+			e->map.floor[(int)e->slist.s[i].y / \
+			BLOC][(int)e->slist.s[i].x / BLOC])
+	{
+		e->slist.s[i].y += v;
+		return (0);
+	}
+	return (1);
+}
+
 int		path_finding(t_env *e, int i)
 {
 	int		x;
@@ -42,29 +70,9 @@ int		path_finding(t_env *e, int i)
 			(e->slist.s[i].texture == 44 && e->slist.s[i].dist > 150))
 	{
 		if (y < x)
-		{
-			x = (e->slist.s[i].x > e->p.x ? -3 : 3);
-			if (e->map.floor[(int)e->slist.s[i].y / \
-					BLOC][(int)(e->slist.s[i].x + x) / BLOC] == \
-					e->map.floor[(int)e->slist.s[i].y / \
-					BLOC][(int)e->slist.s[i].x / BLOC])
-			{
-				e->slist.s[i].x += x;
-				return (0);
-			}
-		}
+			return (path_correct(e, i, 1));
 		else
-		{
-			y = (e->slist.s[i].y > e->p.y ? -3 : 3);
-			if (e->map.floor[(int)(e->slist.s[i].y + y)/ \
-					BLOC][(int)e->slist.s[i].x / BLOC] == \
-					e->map.floor[(int)e->slist.s[i].y / \
-					BLOC][(int)e->slist.s[i].x / BLOC])
-			{
-				e->slist.s[i].y += y;
-				return (0);
-			}
-		}
+			return (path_correct(e, i, 2));
 		e->slist.s[i].state = (e->slist.s[i].state == 0 ? (int)e->p.bob % 2 : 0);
 	}
 	return (1);
