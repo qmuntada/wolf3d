@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:33:10 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/17 17:07:29 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/01/17 18:01:40 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,8 +120,8 @@ void	init_env(t_env *e, int fd)
 	e->win = mlx_new_window(e->mlx, e->img.width, e->img.height, e->map.name);
 	e->img.angle_w = (float)FOV / e->img.width;
 	e->img.img_ptr = mlx_new_image(e->mlx, e->img.width, e->img.height);
-	e->img.img = mlx_get_data_addr(e->img.img_ptr, &e->img.bpp, \
-										&e->img.sl, &e->img.endian);
+	e->img.img = (unsigned char*)mlx_get_data_addr(e->img.img_ptr, \
+			&e->img.bpp, &e->img.sl, &e->img.endian);
 	e->img.dist = (e->img.width / 2) / 0.57735026;
 	e->img.center = e->img.height / 2;
 	e->line = malloc(sizeof(t_line) * e->img.width);

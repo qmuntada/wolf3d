@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:34:31 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/13 18:28:35 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/01/17 18:02:24 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,7 @@ void	init_texture(t_env *e)
 								&e->tex[i].width, &e->tex[i].height);
 		if (e->tex[i].img_ptr == NULL)
 			err_texture();
-		e->tex[i].img = mlx_get_data_addr(e->tex[i].img_ptr, \
+		e->tex[i].img = (unsigned char *)mlx_get_data_addr(e->tex[i].img_ptr, \
 								&e->tex[i].bpp, &e->tex[i].sl, \
 								&e->tex[i].endian);
 	}
