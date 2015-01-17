@@ -1,6 +1,6 @@
-Projet WOLF3D pour l'ecole 42.
+# WOLF3D
 
-Realise a l'aide de la minilibx.
+42 - Realise a l'aide de la minilibx.
 
 Compilation sur MAC (pour l'instant pas de Makefile) :
 gcc *.c libft/libft.a -I/usr/X11/include -L/usr/X11/lib -lX11 -lXext -lmlx

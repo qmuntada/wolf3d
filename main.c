@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:33:44 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/13 17:53:02 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/01/17 16:56:55 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int		expose_hook(t_env *e)
 	return (1);
 }
 
-int		main(int ac, char **av)
+int		main(void)
 {
 	t_env e;
 

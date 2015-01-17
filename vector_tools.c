@@ -6,13 +6,13 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:34:44 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/13 17:46:58 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/01/17 17:04:25 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "wolf.h"
 
-void		*vect_init(t_vectlst **list)
+void		vect_init(t_vectlst **list)
 {
 	(**list).floorev = 0;
 	(**list).floorsv = 0;

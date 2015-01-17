@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:34:26 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/16 17:19:54 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/01/17 16:58:28 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	sprite_shoot(t_env *e, int mov, int i)
 {
-	float	chance;
-
 	if (mov == 1 && e->slist.s[i].attack > 0 && e->slist.s[i].state == 2)
 	{
 		e->slist.s[i].state += (((int)e->p.bob % 2) == 1 ? e->delay : 0);
@@ -48,7 +46,7 @@ int		path_correct(t_env *e, int i, int type)
 		}
 	}
 	v = (e->slist.s[i].y > e->p.y ? -3 : 3);
-	if (e->map.floor[(int)(e->slist.s[i].y + v)/ \
+	if (e->map.floor[(int)(e->slist.s[i].y + v) / \
 			BLOC][(int)e->slist.s[i].x / BLOC] == \
 			e->map.floor[(int)e->slist.s[i].y / \
 			BLOC][(int)e->slist.s[i].x / BLOC])
@@ -73,7 +71,8 @@ int		path_finding(t_env *e, int i)
 			return (path_correct(e, i, 1));
 		else
 			return (path_correct(e, i, 2));
-		e->slist.s[i].state = (e->slist.s[i].state == 0 ? (int)e->p.bob % 2 : 0);
+		e->slist.s[i].state = (e->slist.s[i].state == 0 ? \
+				(int)e->p.bob % 2 : 0);
 	}
 	return (1);
 }

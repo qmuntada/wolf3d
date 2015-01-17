@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/06 18:53:05 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/16 17:07:18 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/01/17 17:07:46 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -264,6 +264,7 @@ void					vect_addsort(t_vectlst **blst, t_vector *content, \
 							char side);
 void					line_cleaner(t_env *e, t_vectlst *blist, int num);
 void					vect_clear(t_vectlst **blst);
+void					movement(t_env *e);
 void					movefront(t_env *e);
 void					moveback(t_env *e);
 void					moveleft(t_env *e);

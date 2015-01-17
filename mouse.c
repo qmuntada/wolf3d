@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:33:48 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/13 17:17:46 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/01/17 16:58:13 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ int		mouse(int x, int y, t_env *e)
 
 int		mouse2(int button, int x, int y, t_env *e)
 {
+	x = y;
+	y = x;
 	if (button == 1 && e->p.shoot == 0)
 		e->p.shoot = 1;
 	return (1);
