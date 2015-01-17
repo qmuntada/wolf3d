@@ -182,6 +182,7 @@ typedef struct			s_env
 	t_line				*line;
 	t_precomp			precomp;
 	t_sprite_list		slist;
+	char				**file;
 	int					hc;
 	int					hf;
 	float				x;
