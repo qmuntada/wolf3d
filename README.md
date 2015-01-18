@@ -2,11 +2,9 @@
 
 42 - Realise a l'aide de la minilibx.
 
-Compilation sur MAC (pour l'instant pas de Makefile) :
-gcc *.c libft/libft.a -I/usr/X11/include -L/usr/X11/lib -lX11 -lXext -lmlx
+"make" if you are on mac.
 
-Compilation sur LINUX :
-gcc *.c libft/libft.a -L/usr/lib/X11 -lmlx -lXext -lX11 -lm
+"make linux" if you are on linux (tested on ubuntu with minilibx already installed).
 
 If you think mouse movement is too fast, you can adjust it in wolf.h : just modify the "# define RSPEED (ADJUSTED VALUE)"
 
@@ -17,5 +15,6 @@ Harmless modification you can do :
 	SCALE (change the scale of the world, harmless but not advised)
 
 You can also customize the map or even make one yourself !
+To play on it, you have to rename it "map" and place it in the root "wolf3d" folder.
 
 Have fun !
