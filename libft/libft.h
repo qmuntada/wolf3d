@@ -68,6 +68,7 @@ char				*ft_strstr(const char *s1, const char *s2);
 char				*ft_strnstr(const char *s1, const char *s2, size_t n);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
+char				*ft_strconc(char *str, char start, char end);
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
 char				*ft_strnew(size_t size);
@@ -110,5 +111,8 @@ int					ft_strcf(char *str, char c);
 void				ft_lstclear(t_list **list);
 t_list				*ft_lstnclear(t_list **list, int nb);
 int					get_next_line(int fd, char **line);
+double				ft_clamp(double x, double min, double max);
+double				ft_mix(double x, double y, double a);
+double				ft_smoothstep(double edge1, double edge2, double x);
 
 #endif
