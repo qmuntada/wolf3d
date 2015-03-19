@@ -16,8 +16,8 @@ SRC = env.c error.c event.c fps.c line.c line2.c main.c mouse.c movement.c \
 	  pre_computed.c ray_cast.c ray_cast2.c render.c sprite.c sprite2.c \
 	  sprite3.c texture.c tools.c vector_tools.c weapon.c
 OBJ = $(SRC:.c=.o)
-LIBX = -lm -I/usr/X11/include -L/usr/X11/lib -lX11 -lXext -lmlx libft/libft.a
-LIBXL = libft/libft.a -L/usr/lib/X11 -lmlx -lXext -lX11 -lm
+LIBX = -lm -I/usr/X11/include -L/usr/X11/lib -lX11 -lXext -lmlx -L libft/ -lft
+LIBXL = -L libft/ -lft -L/usr/lib/X11 -lmlx -lXext -lX11 -lm
 
 all : $(NAME)
 
