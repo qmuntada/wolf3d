@@ -6,15 +6,13 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/06 18:53:05 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/17 18:02:45 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/08/20 15:51:16 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WOLF_H
 # define WOLF_H
 
-# include <X11/X.h>
-# include <X11/Xlib.h>
 # include <mlx.h>
 # include <unistd.h>
 # include <stdio.h>
@@ -28,18 +26,18 @@
 # define HEIGHT 720
 # define FOV 60
 # define MSPEED 8
-# define RSPEED 18
+# define RSPEED 5
 # define BLOC 64
 # define GRAVITY 12
 # define SCALE 2
-# define ESC 65307
+# define ESC 53
 # define Q 113
-# define W 119
+# define W 13
 # define E 101
-# define A 97
-# define S 115
-# define D 100
-# define SPACE 32
+# define A 0
+# define S 1
+# define D 2
+# define SPACE 49
 # define C 99
 # define Z 122
 # define X 120
@@ -216,38 +214,6 @@ typedef struct			s_event_list
 	int					(*hook)();
 	void				*param;
 }						t_event_list;
-
-typedef struct			s_win_list
-{
-	Window				window;
-	GC					gc;
-	struct s_win_list	*next;
-	int					(*mouse_hook)();
-	int					(*key_hook)();
-	int					(*expose_hook)();
-	void				*mouse_param;
-	void				*key_param;
-	void				*expose_param;
-	t_event_list		hooks[LASTEvent];
-}						t_win_list;
-
-typedef struct			s_xvar
-{
-	Display				*display;
-	Window				root;
-	int					screen;
-	int					depth;
-	Visual				*visual;
-	Colormap			cmap;
-	int					private_cmap;
-	t_win_list			*win_list;
-	int					(*loop_hook)();
-	void				*loop_param;
-	int					use_xshm;
-	int					pshm_format;
-	int					do_flush;
-	int					decrgb[6];
-}						t_xvar;
 
 void					err_map(void);
 void					err_texture(void);

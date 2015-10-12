@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:33:44 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/17 16:56:55 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/08/20 15:45:24 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,10 +61,10 @@ int		main(void)
 
 	init_env(&e, check_map());
 	init_texture(&e);
-	mlx_hook(e.win, KeyPress, KeyPressMask, &key_press, &e);
-	mlx_hook(e.win, KeyRelease, KeyReleaseMask, &key_release, &e);
-	mlx_hook(e.win, MotionNotify, PointerMotionMask, &mouse, &e);
-	mlx_hook(e.win, ButtonPress, ButtonPressMask, &mouse2, &e);
+	mlx_hook(e.win, 2, (1L<<0), &key_press, &e);
+	mlx_hook(e.win, 3, (1L<<1), &key_release, &e);
+	mlx_hook(e.win, 6, (1L<<6), &mouse, &e);
+	mlx_hook(e.win, 4, (1L<<2), &mouse2, &e);
 	mlx_loop_hook(e.mlx, &expose_hook, &e);
 	mlx_loop(e.mlx);
 	return (1);

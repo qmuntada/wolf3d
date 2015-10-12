@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:33:48 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/17 16:58:13 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/08/20 15:41:37 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,11 @@ int		mouse2(int button, int x, int y, t_env *e)
 
 void	cursor_move(void *mlx_ptr, int x, int y)
 {
+	/*
 	t_xvar		*xvar;
 	Window		window;
 
 	xvar = (t_xvar *)mlx_ptr;
 	window = xvar->win_list->window;
-	XWarpPointer(xvar->display, window, window, 0, 0, 0, 0, x, y);
+	XWarpPointer(xvar->display, window, window, 0, 0, 0, 0, x, y);*/
 }

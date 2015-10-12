@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:34:49 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/13 18:07:14 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/08/20 15:46:42 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	display_weapon(t_env *e, int state)
 					e->tex[state].img[pos + 1] * 256 \
 					+ e->tex[state].img[pos + 2] * 65536;
 			if (e->color != 0x980088)
-				pixel_put(e, e->x + bob * 25, e->y + abs(bob * 75));
+				pixel_put(e, e->x + bob * 25, e->y + fabsf(bob * 75));
 		}
 	}
 }

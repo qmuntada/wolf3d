@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:34:26 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/17 16:58:28 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/08/20 15:46:32 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,8 @@ int		path_finding(t_env *e, int i)
 	int		x;
 	int		y;
 
-	x = abs(e->p.x - e->slist.s[i].x);
-	y = abs(e->p.y - e->slist.s[i].y);
+	x = fabsf(e->p.x - e->slist.s[i].x);
+	y = fabsf(e->p.y - e->slist.s[i].y);
 	if ((e->slist.s[i].texture == 34 && e->slist.s[i].dist > 32) || \
 			(e->slist.s[i].texture == 44 && e->slist.s[i].dist > 200))
 	{
