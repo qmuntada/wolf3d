@@ -1,0 +1,2456 @@
+Script started on Thu Oct 29 14:44:13 2015
+/nfs/zfs-student-3/users/2014/qmuntada/.oh-my-zsh/oh-my-zsh.sh:source:110: no such file or directory: /nfs/zfs-student-3/users/2014/qmuntada/.oh-my-zsh/themes/robyrussel.zsh-theme
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=lls[?1l>
+]2;ls -G]1;lsMakefile       env.c          fps.c          line2.c        [1m[36mminilibx_macos[39;49m[0m pre_computed.c render.c       sprite3.c      tools.c        weapon.c
+README.md      error.c        [1m[36mlibft[39;49m[0m          main.c         mouse.c        ray_cast.c     sprite.c       [1m[36mtexture[39;49m[0m        typescript     wolf.h
+auteur         event.c        line.c         map            movement.c     ray_cast2.c    sprite2.c      texture.c      vector_tools.c
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=ttypescript[?1l>
+]2;typescript]1;typescriptzsh: command not found: typescript
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=ccat typescript[1m [0m[0m [?1l>
+]2;cat typescript]1;catScript started on Thu Oct 29 14:44:13 2015
+/nfs/zfs-student-3/users/2014/qmuntada/.oh-my-zsh/oh-my-zsh.sh:source:110: no such file or directory: /nfs/zfs-student-3/users/2014/qmuntada/.oh-my-zsh/themes/robyrussel.zsh-theme
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=lls[?1l>
+]2;ls -G]1;lsMakefile       env.c          fps.c          line2.c        [1m[36mminilibx_macos[39;49m[0m pre_computed.c render.c       sprite3.c      tools.c        weapon.c
+README.md      error.c        [1m[36mlibft[39;49m[0m          main.c         mouse.c        ray_cast.c     sprite.c       [1m[36mtexture[39;49m[0m        typescript     wolf.h
+auteur         event.c        line.c         map            movement.c     ray_cast2.c    sprite2.c      texture.c      vector_tools.c
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=ttypescript[?1l>
+]2;typescript]1;typescriptzsh: command not found: typescript
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=hhis[?1l>
+]2;his]1;hiszsh: command not found: his
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=hhis h hhis  h  j hhistory[?1l>
+]2;fc -l 1]1;history    1  ls
+    2  vim
+    3  pwd
+    4  ls -l
+    5  ls -la
+    6  ls
+    7  ls .
+    8  ls.
+    9  ls ..
+   10  ls
+   11  man rm
+   12  say bonjour
+   13  say hello
+   14  say sqlut ca va
+   15  say bonjour
+   16  say bonjour
+   17  touch
+   18  cd 
+   19  ls
+   20  man cat
+   21  date
+   22  git git config --global user.name "Quentin"
+   23  git config --global user.name "Quentin"
+   24  git config --global user.name "Quentin"
+   25  git config --global user.email "quentin.muntadas@orange.fr"
+   26  git config --list
+   27  git clone vgs:pisc-0-001/2014/par-0-1/j00/qmuntada ex01
+   28  pwd
+   29  ls
+   30  cd ex01
+   31  ls
+   32  touch testDay00
+   33  ls
+   34  ls -l
+   35  chmod 466 testDay00
+   36  ls -l
+   37  chmod 477 testDay00
+   38  ls -l
+   39  chmod 455 testDay00
+   40  ls -l
+   41  tar -cf testDay00.tar testDay00
+   42  ls
+   43  ls -l
+   44  rm testDay00
+   45  ls
+   46  ls -l
+   47  chmod 455 testDay00.tar
+   48  ls -l
+   49  git add testday00.tar
+   50  git status
+   51  git commit
+   52  git commit
+   53  git add testDay00.tar
+   54  git commit
+   55  git commit "Rendu du fichier .tar pour le premier exercice disposant des droits de fichiers demandes.\nls\n"
+   56  git status
+   57  git commit -m "Rendu du fichier .tar pour le premier exercice disposant des droits de fichiers demandes."
+   58  git status
+   59  ls -l
+   60  ls
+   61  cd >
+   62  cd .
+   63  ls
+   64  cd ..
+   65  ls
+   66  git clone vgs:pisc-0-001/2014/par-0-1/j00/qmuntada ex02
+   67  ls
+   68  cd ex02
+   69  ls
+   70  touch test0 test1 test2 test3 test4 test5
+   71  ls
+   72  ln test0 test6
+   73  ls
+   74  ls -l
+   75  man ln
+   76  alias test6='test0'
+   77  ls -l
+   78  rm test6
+   79  ls
+   80  ls -l
+   81  rm test0 test2
+   82  mkdir test0 test2
+   83  ls -l
+   84  ls -la
+   85  ls -l
+   86  ls
+   87  ls -l
+   88  man ln
+   89  ln test0 test6
+   90  ln test6 test0
+   91  man chmod
+   92  touch test6
+   93  ln test6 test0
+   94  ls
+   95  ls -l
+   96  ln test0 test6
+   97  ls
+   98  ls -l
+   99  rm test0 test6
+  100  mkdir test0
+  101  ls
+  102  rm test0
+  103  rmdir test00
+  104  rmdir test0
+  105  ls
+  106  cd test0
+  107  ls
+  108  ls -l
+  109  rm test6
+  110  cd ..
+  111  ls
+  112  rmdir test0
+  113  ls
+  114  ls -l
+  115  mkdir test0
+  116  ls -l
+  117  man ln
+  118  ls -l
+  119  ln -lx test6 test0
+  120  ln -x test6 test0
+  121  man ln
+  122  ln -s test6 test0
+  123  ls -l
+  124  ln -s test0 test6
+  125  ls -l
+  126  chmod 736 test0
+  127  ls -l
+  128  chmod 746 test0
+  129  ls -l
+  130  chmod 726 test0
+  131  ls -l
+  132  chmod 736 test0
+  133  ls -l
+  134  chmod 756 test0
+  135  ls -l
+  136  chmod 715 test0
+  137  chmod 714 test1
+  138  ls -l
+  139  chmod 504 test2
+  140  ls -l
+  141  chmod 644 test3 test4 test5
+  142  ls -l
+  143  chmod 404 test3 test5
+  144  ls -l
+  145  chmod 641 test4
+  146  ls -l
+  147  ls -l
+  148  cd ..
+  149  ls
+  150  cd ex01
+  151  ls
+  152  ls -l
+  153  touch -m -t 110506012342.05 testDay00.tar
+  154  touch -m -t 1106012342.01 testDay00.tar
+  155  ls -l
+  156  vim testDay00.tar
+  157  ls -l
+  158  chmod 744
+  159  chmod 744 testDay00.tar
+  160  ls -l
+  161  vim testDay00.tar
+  162  ls -l
+  163  chmod 777 testDay00.tar
+  164  vim testDay00.tar
+  165  ls
+  166  rm testDay00.tar
+  167  ls
+  168  touch testDay00
+  169  ls
+  170  ls -l
+  171  vim testDay00
+  172  ls -l
+  173  vim testDay00
+  174  ls
+  175  chmod 455 testDay00
+  176  ls -l
+  177  touch -m -t 1106012342.01 testDay00
+  178  ls -l
+  179  tar -cf testDay00.tar testDay00
+  180  ls -l
+  181  rm testDay00
+  182  ls -l
+  183  git status
+  184  git commit
+  185  git commit -m "Modification du contenu de larchive"
+  186  git status
+  187  git add testDay00.tar
+  188  git commit -m "Modification du contenu de larchive"
+  189  git push origin master
+  190  ls
+  191  cd ..
+  192  ls
+  193  cd ex02
+  194  ls
+  195  ls -l
+  196  chmod 777 test1 test3 test4 test5
+  197  ls -l
+  198  vim test1
+  199  ls -l
+  200  vim test1
+  201  ls -l
+  202  vim test1
+  203  ls -l
+  204  vim test1
+  205  ls -l
+  206  vim test3
+  207  ls -l
+  208  vim test3
+  209  ls -l
+  210  vim test5
+  211  ls -l
+  212  vim test4
+  213  ls -l
+  214  vim test5
+  215  ls -l
+  216  vim test5
+  217  ls -l
+  218  vim test5
+  219  ls -l
+  220  vim test5
+  221  ls -l
+  222  chmod 714 test1
+  223  ls -l
+  224  chmod 404 test3
+  225  chmod 641 test4
+  226  chmod 404 test5
+  227  ls -l
+  228  ls
+  229  ls -l
+  230  ls -la
+  231  git status
+  232  git add test0 test1 test2 test3 test4 test5 test6
+  233  git status
+  234  git commit -m " Rendu des fichiers,dossiers et du lien demande"
+  235  git push origin master
+  236  kinit
+  237  git status
+  238  git status
+  239  ls
+  240  git push
+  241  git status
+  242  git clone vgs:pisc-0-001/2014/par-0-1/j00/qmuntada
+  243  git status
+  244  git clone vgs:pisc-0-001/2014/par-0-1/j00/qmuntada ex02
+  245  git status
+  246  man git
+  247  git quit
+  248  git init
+  249  git status
+  250  git clone vgs:pisc-0-001/2014/par-0-1/j00/qmuntada ex02
+  251  git status
+  252  ls
+  253  cd ex02
+  254  ls
+  255  cd>>
+  256  cd..
+  257  cd ..
+  258  ls
+  259  cd ..
+  260  ls
+  261  cd ex01
+  262  ls
+  263  git status
+  264  cd ..
+  265  ls
+  266  cd ex02
+  267  ls
+  268  rmdir ex02
+  269  ls
+  270  cd ex02
+  271  ls
+  272  rm testDay00.tar
+  273  ls
+  274  cd ..
+  275  rmdir ex02
+  276  cd ex02
+  277  ls
+  278  ls -l
+  279  cd ..
+  280  ls
+  281  rm ex02
+  282  rmdir ex02
+  283  cd qmuntada
+  284  ls
+  285  cd ..
+  286  cd qmuntada
+  287  ls
+  288  rm testDay00.tar
+  289  ls
+  290  cdd ..
+  291  cd ..
+  292  ls
+  293  rmdir qmuntada
+  294  git status
+  295  git clone vgs:pisc-0-001/2014/par-0-1/j00/qmuntada
+  296  cd ..
+  297  ls
+  298  cd ..
+  299  ls
+  300  cd qmuntada
+  301  ls
+  302  ls ex01
+  303  ls -l
+  304  cd ex01
+  305  ls -l
+  306  git stats
+  307  git status
+  308  git add testDay00.tar
+  309  git status
+  310  ls
+  311  git help
+  312  q
+  313  git log
+  314  ls
+  315  cd >>
+  316  cd ..
+  317  ls
+  318  cd ex02
+  319  git status
+  320  ls
+  321  ls
+  322  git push
+  323  cd ..
+  324  pwd
+  325  ls
+  326  cd
+  327  ls
+  328  cd ~
+  329  ls
+  330  cd /
+  331  ls
+  332  cd
+  333  ls
+  334  git clone vogsphere@vogsphere.42.fr:pisc-0-001/2014/par-0-1/j00/qmuntada
+  335  ls
+  336  cd qmuntada
+  337  ls
+  338  git status
+  339  rm testDay00.tar
+  340  ls
+  341  cd ..
+  342  mv ex01 qmuntada
+  343  mv ex02 qmuntada
+  344  ls
+  345  cd qmuntada
+  346  ls
+  347  cd ex01
+  348  ls
+  349  cd ..
+  350  cd ex02
+  351  ls
+  352  rm ex02
+  353  rmdir ex02
+  354  rm qmuntada
+  355  rmdir qmuntada
+  356  cd ..
+  357  ls
+  358  git status
+  359  git add ex01 ex02
+  360  git status
+  361  git commit -m "ajout des 2 dossiers dexercice"
+  362  git push origin master
+  363  cd ex02
+  364  ls
+  365  ls -l
+  366  cd ..
+  367  ls
+  368  cd ..
+  369  ls
+  370  cd qmuntada
+  371  ls
+  372  mkdir ex03
+  373  ls
+  374  cd ex02
+  375  cd ex03
+  376  cd ex03
+  377  ls
+  378  cd ..
+  379  cd ex03
+  380  ls
+  381  pwd
+  382  pwd
+  383  klidt
+  384  klist
+  385  klist >> klist.txt
+  386  ls
+  387  cat klist.txt
+  388  git status
+  389  cd ..
+  390  ls
+  391  git status
+  392  git add ex03
+  393  git status
+  394  git commit -m "Rendu de lexercice 3 et du fichier klist.txt "
+  395  git push
+  396  ls
+  397  mkdir ex04
+  398  ls
+  399  cd ex04
+  400  ls
+  401  man ldap
+  402  git status
+  403  git log
+  404  ah who_am_i.sh
+  405  sh who_am_i.sh
+  406  man ldap
+  407  ldap
+  408  man ldap
+  409  ldap dn
+  410  ldap_dn
+  411  man ldap
+  412  say COUCOU TU VEUX VOIR MA BITE
+  413  say COUCOU TU VEUX VOIR MA BITE
+  414  cd ~/.vim/bundle
+  415  cd ~/.vim/bundle
+  416  curl https://raw.githubusercontent.com/reversTeam/Sublivim/master/installer.sh | sh
+  417  vim
+  418  man chair
+  419  man tamere
+  420  man meredeolivier
+  421  man alias
+  422  vim
+  423  vim
+  424  ls
+  425  pzd
+  426  pwd
+  427  ls
+  428  ls
+  429  cd qmuntada
+  430  ls
+  431  cd ex04
+  432  ls
+  433  git status
+  434  ls
+  435  mk who_am_i.sh
+  436  make who_am_i.sh
+  437  touch who_am_i.sh
+  438  ls
+  439  ls -l
+  440  klist
+  441  Dsquery OU test
+  442  DSquery OU test
+  443  DSquery OU
+  444  DSquery
+  445  ldapsearch test
+  446  klist
+  447  ldapsearch OU
+  448  klist
+  449  man ldapsearch
+  450  ldap
+  451  ldapwhoa;i
+  452  ldapwhoami
+  453  man ldapwhoami
+  454  ldapwhoami -D
+  455  ldapwhoami -d
+  456  ldapwhoami -D
+  457  ldapwhoami -D binddn
+  458  ldapwhoami binddn
+  459  ldapwhoam
+  460  ldapwhoami
+  461  ldapwhoami -dn
+  462  man ldapwhoami
+  463  ldapwhoami -W
+  464  ldapwhoami -w
+  465  ldapwhoami -D binddn
+  466  ldapwhoami -D dn
+  467  ldapwhoami -D
+  468  ldapwhoami
+  469  ldapwhoami
+  470  ls
+  471  who_am_i.sh >> ldapwhoami
+  472  ldapwhoami >> who_am_i.sh
+  473  cat who_am_i.sh
+  474  ls
+  475  ls
+  476  rm ldapwhoq=ami
+  477  rm ldapwhoami
+  478  ls
+  479  sh who_am_i.sh
+  480  sh who_am_i.sh
+  481  cat  who_am_i.sh
+  482  man ldapwhoani
+  483  man ldapwhoami
+  484  sh who_am_i.sh
+  485  man ldapwhoami
+  486  ldapwhoami -x
+  487  man ldapwhoami
+  488  ldapwhoami -n
+  489  ldapwhoami -v
+  490  ldapwhoami
+  491  ldapwhoami
+  492  ldapwhoami -D
+  493  ldapwhoami -U
+  494  ldapwhoami -Q
+  495  ls
+  496  sh who_am_i.sh
+  497  cd ..
+  498  ls
+  499  git staut
+  500  git statut
+  501  git status
+  502  git add ex04
+  503  git commit -m " Ajout de lexercice 4 avec son fichier executable sh "
+  504  git push
+  505  ls
+  506  mkdir ex05
+  507  ls
+  508  cd ex05
+  509  ls
+  510  touch people.sh
+  511  :q!
+  512  :quit!
+  513  :q!
+  514  :q
+  515  ls
+  516  clear
+  517  ls
+  518  vim
+  519  ldapsearch
+  520  ldapsearch
+  521  man ldapsearch
+  522  ldapsearch -s sub "objectclass=apple-user"
+  523  ldapsearch "objectclass=apple-user"
+  524  ldapsearch "objectclass=apple-useffr"
+  525  ldapsearch "objectclass=apple-user"
+  526  ldapsearch -s "objectclass=apple-user"
+  527  ldapsearch -LL "objectclass=apple-user"
+  528  ldapsearch "objectclass=apple-user"
+  529  sh people.sh
+  530  ldapsearch -s "objectclass=apple-user"
+  531  ldapsearch -S "objectclass=apple-user"
+  532  man ldapsearch
+  533  sh people.sh
+  534  cd ..
+  535  ls
+  536  cd ex02
+  537  ls
+  538  ls -l
+  539  rm qmuntada
+  540  rmdir qmuntada
+  541  cd qmuntada
+  542  ls -la
+  543  ls
+  544  ls -a
+  545  rm .
+  546  rm .git
+  547  rmdir .git
+  548  cd .git
+  549  ls
+  550  cd ..
+  551  ls
+  552  cd ..
+  553  ls
+  554  cd ex02
+  555  ls
+  556  ls -a
+  557  cd ..
+  558  ls
+  559  cd ..
+  560  ls
+  561  cd ex05
+  562  ls
+  563  cd ..
+  564  ls
+  565  cd ex02
+  566  ls
+  567  ls -l
+  568  touch -m  -t -h 14060122.20 test6
+  569  touch -m  -t -h 1406012220.04 test6
+  570  touch -m  -t -h 0106012220.04 test6
+  571  touch -m  -t -h 0106011020.04 test6
+  572  touch -m -ht 0106012220.04 test6
+  573  ls -l
+  574  touch -m -ht 1406012220 test6
+  575  ls -l
+  576  touch -m -ht 1406011156 test5
+  577  touch -m -ht 1406011154 test4
+  578  touch -m -ht 1406011153 test3
+  579  touch -m -ht 1406011057 test2
+  580  touch -m -ht 1406011152 test1
+  581  touch -m -ht 1406012047 test0
+  582  touch -m -ht 1406012146 test1
+  583  touch -m -ht 1406012245 test2
+  584  touch -m -ht 1406012344 test3
+  585  touch -m -ht 1406012343 test4
+  586  touch -m -ht 1406012344 test5
+  587  ls -l
+  588  man rm
+  589  ls
+  590  rm -f ex02
+  591  rm -rf ex02
+  592  ls
+  593  rm -rf qmuntada
+  594  ls
+  595  ls -l
+  596  ls
+  597  cd ..
+  598  ls
+  599  git status
+  600  git commit -m " Mise a jour de lexercice 2"
+  601  git push
+  602  git push origin master
+  603  ls
+  604  cd ..
+  605  ls
+  606  git push origin master
+  607  git status
+  608  git clone vogsphere@vogsphere.42.fr:pisc-0-001/2014/par-0-1/j00/qmuntada
+  609  ls
+  610  cd qmuntada
+  611  git status
+  612  git commit -m " Mise a jour de lexercice 2"
+  613  git checkout
+  614  git add ex01 ex02 ex03 ex04
+  615  git commit -m " Mise a jour de lexercice 2"
+  616  git push
+  617  git status
+  618  git commit -m " Mise a jour de lexercice 2"
+  619  ls
+  620  git commit -m " Mise a jour de lexercice 2"
+  621  git commit -m -a " Mise a jour de lexercice 2"
+  622  git commit -m " Mise a jour de lexercice 2"
+  623  git rm testDay00.tar
+  624  git status
+  625  git reset HEAD testDay00.tar
+  626  git status
+  627  git commit -m " Mise a jour de lexercice 2"
+  628  git rm testDay00.tar
+  629  git commit -m " Mise a jour de lexercice 2"
+  630  git push
+  631  git log
+  632  ls
+  633  cd ex05
+  634  ls
+  635  sh people.sh
+  636  ldapsearch -x cn "objectclass=apple-user"
+  637  ldapsearch -x dn "objectclass=apple-user"
+  638  ldapsearch -x\ "objectclass=apple-user"
+  639  ldapsearch -x "objectclass=apple-user"
+  640  ldapsearch -x dn uid "objectclass=apple-user"
+  641  ldapsearch -x uid "objectclass=apple-user"
+  642  ldapsearch -x uid "objectclass=apple-user"
+  643  vim
+  644  cd ..
+  645  ls
+  646  cd ex002
+  647  cd ex02
+  648  ls
+  649  ls -l
+  650  rm test5
+  651  ln test3 test5
+  652  ls -l
+  653  cd test0
+  654  ls
+  655  rm test6
+  656  ls
+  657  cd ..
+  658  ls
+  659  ls -l
+  660  cd ..
+  661  ls
+  662  git status
+  663  git commit -m "Maj de lexercice 2 (encore) "
+  664  git add ex02
+  665  git commit -m "Maj de lexercice 2 (encore) "
+  666  git push
+  667  kinit
+  668  kinit
+  669  git status
+  670  git commit -m "Maj de lexercice 2 (encore) "
+  671  git add ex02
+  672  git commit -m "Maj de lexercice 2 (encore) "
+  673  ldapsearch -S uid "onjectclass=apple-user"
+  674  ldapsearch -S uid "objectclass=apple-user"
+  675  ldapsearch -S -x uid "objectclass=apple-user"
+  676  ldapsearch help
+  677  help ldapsearch
+  678  helpldapsearch
+  679  cd ..
+  680  ls
+  681  cd qmuntada
+  682  ls
+  683  cd ex02
+  684  ls
+  685  cd ..
+  686  tar -cf ex02.tar *
+  687  ls
+  688  mv ex02.tar ex02
+  689  ls
+  690  cd ex02
+  691  ls
+  692  ls -l
+  693  cd ..
+  694  ls
+  695  gt status
+  696  igt status
+  697  git status
+  698  git qdd ex02
+  699  git add ex02
+  700  git commit -m "Maj de lexercice 2 (encore) "
+  701  cd ex02
+  702  git status
+  703  git add ex02.tar
+  704  git commit -m "Maj de lexercice 2 (encore) "
+  705  cd ..
+  706  git push
+  707  cd ex02
+  708  git push
+  709  ls
+  710  ls -l
+  711  git push
+  712  cd ..
+  713  git push origin master
+  714  git statu
+  715  git status
+  716  s
+  717  ls
+  718  cd ex05
+  719  ls
+  720  sh people.sh
+  721  ldapsearch -S -x uid "objectclass=apple-user"
+  722  ldapsearch -S "objectclass=apple-user" "uid=*"
+  723  ldapsearch -S -D  "objectclass=apple-user"
+  724  ldapsearch -S -x uid  "objectclass=apple-user"
+  725  ldapsearch -S -x -s base uid  "objectclass=apple-user"
+  726  ldapsearch -S -x -s base uid  "objectclass=apple-user"
+  727  ldapsearch -S -x -s one uid  "objectclass=apple-user"
+  728  ldapsearch -S -x -s uid  "objectclass=apple-user"
+  729  ldapsearch -S -x -Q uid  "objectclass=apple-user"
+  730  ldapsearch -S -x -A uid  "objectclass=apple-user"
+  731  ldapsearch -S -x -a uid  "objectclass=apple-user"
+  732  ldapsearch -S -x -A uid  "objectclass=apple-user"
+  733  ldapsearch -S -x -A uid  "objectclass=apple-user" -v -l
+  734  ldapsearch -S -x uid  "objectclass=apple-user" -v -l
+  735  ldapsearch -S -x uid  "objectclass=apple-user"
+  736  ldapsearch -S sn -S -x uid  "objectclass=apple-user"
+  737  ldapsearch -S -attribute -x uid  "objectclass=apple-user"
+  738  ldapsearch -S -x -uid  "objectclass=apple-user"
+  739  ldapsearch -S -x -S uid  "objectclass=apple-user"
+  740  ldapsearch -S -x uid -S  "objectclass=apple-user"
+  741  ldapsearch -S uid -S  "objectclass=apple-user"
+  742  ldapsearch -S uid -S  "objectclass=apple-user" -x
+  743  ldapsearch -S -x uid  "objectclass=apple-user"
+  744  man sort
+  745  ldapsearch -S -r -f -x uid  "objectclass=apple-user"
+  746  ldapsearch -S -r -f uid  "objectclass=apple-user"
+  747  sort -r -fldapsearch -S uid  "objectclass=apple-user"
+  748  sort -r -f ldapsearch -S uid  "objectclass=apple-user"
+  749  sort help
+  750  man grep
+  751  ldapsearch -u -t "objectclass=apple-user" | grep -p dn | sort -rf
+  752  ldapsearch -u -t "objectclass=apple-user" | grep -p dn | sort -rf
+  753  ldapsearch -u -t "objectclass=apple-user" -LLL | grep -p dn | sort -rf
+  754  ldapsearch -u -t "objectclass=apple-user" -LLL | grep -p dn | sort -rf
+  755  ldapsearch -u -t "objectclass=apple-user" -LLL | grep -p uid | sort -rf
+  756  ldapsearch -x uid -t "objectclass=apple-user" -LLL | grep -p uid | sort -rf
+  757  ldapsearch -x uid -t "objectclass=apple-user" -LLL | grep -p uid | sort -rf
+  758  ldapsearch -u -t "objectclass=apple-user" -LLL | grep -p uid | sort -rf
+  759  ldapsearch -x uid -t "objectclass=apple-user" -LLL | grep -p uid | sort -rf
+  760  curl -L http://install.ohmyz.sh | sh
+  761  ls
+  762  ls
+  763  cd 42
+  764  cd libft
+  765  ls
+  766  vim ft_strdel.c
+  767  vim ft_strdel.c
+  768  vim ft_lstmap.c
+  769  make norme
+  770  ..
+  771  ..
+  772  cd ..
+  773  ks
+  774  ls
+  775  cd .
+  776  cd ..
+  777  ls
+  778  l
+  779  lls -l
+  780  ls -l
+  781  vim .zshrc
+  782  vim sdkgn
+  783  ls
+  784  rm sdkgn
+  785  ls
+  786  vim .zshrc
+  787  vim test
+  788  vim .zshrc
+  789  vim test
+  790  ls
+  791  vim .zshrc
+  792  vim test
+  793  ls
+  794  git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
+  795  source /path/to/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  796  vim ./zshrc
+  797  vim .zsh
+  798  vim .zshrc
+  799  source ~/.zshrc
+  800  ls
+  801  clear
+  802  vim .zshrc
+  803  ls
+  804  ls
+  805  vim .zshrc
+  806  ls
+  807  rm -rf zsh-syntax-highlighting
+  808  ls
+  809  vim .zshrc
+  810  ls
+  811  curl -L http://install.ohmyz.sh | sh
+  812  ls
+  813  la
+  814  ls
+  815  cd D
+  816  ls
+  817  cd Documents
+  818  ls
+  819  ..
+  820  l
+  821  ls
+  822  clear
+  823  ls
+  824  cd github
+  825  ls
+  826  cd w
+  827  cd wolf3d
+  828  ls
+  829  make re
+  830  ./wolf3d
+  831  ls
+  832  make fclean
+  833  ls
+  834  cd minilibx_macos
+  835  ls
+  836  ..
+  837  ls
+  838  cd libft
+  839  ls
+  840  make fclean
+  841  ls
+  842  ..
+  843  ls
+  844  cat README.md
+  845  vim README.md
+  846  git add -A
+  847  git commit -m MAJ_NEW_MLX
+  848  git push origin master
+  849  ls
+  850  ll
+  851  env
+  852  man execve
+  853  man execl
+  854  man dup2
+  855  man stdout
+  856  s
+  857  ls
+  858  pwd
+  859  cd Do
+  860  cd Downloads
+  861  ls
+  862  unzip Daith.rar
+  863  ls
+  864  apt-get install unrar
+  865  tar -zxvf Daith.rar
+  866  mv Daith.rar Daith
+  867  tar -zxvf Daith
+  868  brew install urar
+  869  brew install unrar
+  870  unrar -e Daith
+  871  unrar e Daith
+  872  unrar e Daith ,
+  873  unrar e Daith .
+  874  brew install unrar
+  875  mv Daith Daith.rar
+  876  ls
+  877  unrar e Daith.rar
+  878  man unrar
+  879  brew update unrar
+  880  unrar Dait
+  881  unrar Daith.rar
+  882  unrar e Daith.rar
+  883  ls
+  884  make --makefile makefile.unix
+  885  ls
+  886  cd Downloads
+  887  ls
+  888  unrar x Daith.rar
+  889  ls
+  890  cd Downloads
+  891  ls
+  892  unrar x Daith.rar
+  893  brew install unrar
+  894  brew info unrar
+  895  unrar e Daith.rar
+  896  unrar x Daith.rar
+  897  brew unistall unrar
+  898  brew install unrar
+  899  man unrar
+  900  man 2 unrar
+  901  man 3 unrar
+  902  man brew
+  903  brew search
+  904  brew search unrar
+  905  man brew
+  906  brew update
+  907  unrar e Daith.rar
+  908  unrar x Daith.rar
+  909  unrar -v
+  910  brew search unrar
+  911  brew install unrar
+  912  brew update
+  913  brew upgrade
+  914  ls
+  915  cd Downloads/
+  916  ls
+  917  open .
+  918  cd github
+  919  ls
+  920  cd ft_
+  921  cd ft_p
+  922  ls
+  923  git pull
+  924  ..
+  925  rm -rf ft_p
+  926  git clone https://github.com/francoios/ft_p.git
+  927  cd f
+  928  cd ft_
+  929  cd ft_p
+  930  ls
+  931  make
+  932  cd server
+  933  s
+  934  ls
+  935  make
+  936  cd github/ft_p/client
+  937  ls
+  938  make
+  939  ./server 4242
+  940  ./client 127.0.0.1 4242
+  941  quit
+  942  ls
+  943  ..
+  944  ls
+  945  cd client
+  946  l
+  947  ls
+  948  vim src
+  949  cat ../server/includes/server.h 
+  950  make
+  951  ./server 4242
+  952  ./client 127.0.0.1 4242
+  953  vim src/ft_cd2.
+  954  vim src/ft_cd2.c
+  955  make re
+  956  ./server 4242
+  957  ./client 127.0.0.1 4242
+  958  vim src/ft_cd2.c
+  959  make re
+  960  ./server 4242
+  961  ./client 127.0.0.1 4242
+  962  git pull
+  963  ls
+  964  make clean
+  965  git pull
+  966  git commit -m bobo
+  967  git pull
+  968  ls
+  969  make fclean
+  970  git pull
+  971  ls
+  972  make
+  973  ./server 4242
+  974  ./client 127.0.0.1 4242
+  975  cat ../server/includes/server.h
+  976  vim src/ft_cd2.
+  977  ./server 4242
+  978  ./client 127.0.0.1 4242
+  979  vim src/ft_cd2.c
+  980  make re
+  981  ./server 4242
+  982  ./server 4243
+  983  ./client 127.0.0.1 4243
+  984  vim src/ft_cd2.c
+  985  man getcwd
+  986  man chdir
+  987  man 2 chdir
+  988  make re
+  989  maker e
+  990  ./server 4242
+  991  ./client 127.0.0.1 4243
+  992  ./client 127.0.0.1 4242
+  993  vim src/ft_cd2.c
+  994  make
+  995  ./server 4242
+  996  ./client 127.0.0.1 4242
+  997  quit
+  998  vim src/ft_cd2.c
+  999  make re
+ 1000  ./server 4242
+ 1001  ./client 127.0.0.1 4242
+ 1002  vim src/ft_cd2.c
+ 1003  make re
+ 1004  ./server 4242
+ 1005  ./client 127.0.0.1 4242
+ 1006  vim src/ft_cd2.c
+ 1007  make re
+ 1008  ./server 4242
+ 1009  ./client 127.0.0.1 4242
+ 1010  vim src/ft_cd2.c
+ 1011  make re
+ 1012  ./server 4242
+ 1013  ./client 127.0.0.1 4242
+ 1014  vim src/ft_cd2.c
+ 1015  make re
+ 1016  ./server 4242
+ 1017  ./client 127.0.0.1 4242
+ 1018  ./server 4242
+ 1019  ./server 4243
+ 1020  ./client 127.0.0.1 4243
+ 1021  vim src/ft_cd2.c
+ 1022  vim ../client/src/client.c
+ 1023  make re
+ 1024  ./server 4242
+ 1025  ./client 127.0.0.1 4243
+ 1026  ./client 127.0.0.1 4242
+ 1027  git add -A
+ 1028  git commit -m maj
+ 1029  git push origin master
+ 1030  ls
+ 1031  man 2 mkdir
+ 1032  ./server 4242
+ 1033  ./client 127.0.0.1 4242
+ 1034  cd github/ft_p/client
+ 1035  ./client 127.0.0.1 4242
+ 1036  ls
+ 1037  cd github
+ 1038  ls
+ 1039  cd gi
+ 1040  ls
+ 1041  cd ft_p
+ 1042  cd server
+ 1043  cd github/ft_p/client
+ 1044  ls
+ 1045  pwd
+ 1046  ls
+ 1047  ./server 4242
+ 1048  ./client 127.0.0.1 4242
+ 1049  ..
+ 1050  git pull
+ 1051  ls
+ 1052  cd github
+ 1053  ls
+ 1054  cd github
+ 1055  ls
+ 1056  cd ft_p
+ 1057  ls
+ 1058  LS
+ 1059  ls
+ 1060  cd client
+ 1061  cd ft_p
+ 1062  ls
+ 1063  cd server
+ 1064  l
+ 1065  make re
+ 1066  ..
+ 1067  l
+ 1068  ls
+ 1069  ..
+ 1070  ls
+ 1071  ..
+ 1072  ls
+ 1073  git clone vogsphere@vogsphere.42.fr:intra/2015/activities/d06/tuardoui4
+ 1074  git clone vogsphere@vogsphere.42.fr:intra/2015/activities/d06/tuardoui4 f
+ 1075  ls
+ 1076  git clone vogsphere@vogsphere.42.fr:intra/2015/activities/d06/tuardoui4 f
+ 1077  gitclone vogsphere@vogsphere.42.fr:intra/2015/activities/d06/tuardoui4
+ 1078  git clone vogsphere@vogsphere.42.fr:intra/2015/activities/d06/tuardoui4
+ 1079  ls
+ 1080  ld
+ 1081  ls
+ 1082  l
+ 1083  ls
+ 1084  git clone vogsphere@vogsphere.42.fr:intra/2015/activities/d06/tuardoui4
+ 1085  cd ..
+ 1086  ls
+ 1087  cd qmuntada
+ 1088  ls
+ 1089  cd /tmp
+ 1090  ls
+ 1091  git clone vogsphere@vogsphere.42.fr:intra/2015/activities/d06/tuardoui4
+ 1092  cd .
+ 1093  ls
+ 1094  cd 
+ 1095  ls
+ 1096  cd github
+ 1097  ls
+ 1098  cd ft_p
+ 1099  ls
+ 1100  cd server
+ 1101  ls
+ 1102  make re
+ 1103  make fclean
+ 1104  ..
+ 1105  ls
+ 1106  git pull
+ 1107  make
+ 1108  cd server
+ 1109  make
+ 1110  ./server 4242
+ 1111  ./client localhost 4242
+ 1112  ls
+ 1113  vim src/core.c
+ 1114  man 2 unlink
+ 1115  man mmap
+ 1116  ls
+ 1117  vim test
+ 1118  mv test test.c
+ 1119  vim test.c
+ 1120  gcc test.c
+ 1121  ls
+ 1122  vim toto
+ 1123  ./a.out toto
+ 1124  ./a.out toto 3
+ 1125  ./a.out toto 1
+ 1126  ./a.out toto 2
+ 1127  ./a.out toto 2 3
+ 1128  ./a.out toto 1
+ 1129  ./a.out toto 1 2
+ 1130  ./a.out toto 3 2
+ 1131  ./a.out toto 0 1
+ 1132  ./a.out toto 0
+ 1133  ./a.out toto 0 1
+ 1134  ./a.out toto 2 1
+ 1135  ./a.out toto -1 1
+ 1136  ./a.out toto 0 1
+ 1137  cat toto
+ 1138  ./a.out toto 0 10
+ 1139  ./a.out toto 0
+ 1140  man mmap
+ 1141  man read
+ 1142  man 2 read
+ 1143  cat test.c
+ 1144  cat toto
+ 1145  ./a.out toto 1
+ 1146  cat test.c
+ 1147  man 2 mmap
+ 1148  man munmap
+ 1149  man 2 munmap
+ 1150  man lseek
+ 1151  touch blop
+ 1152  vim blop
+ 1153  ls
+ 1154  time ./a.out blop
+ 1155  vim test.c
+ 1156  time ./a.out blop
+ 1157  vim blop
+ 1158  rm blop
+ 1159  vim blop
+ 1160  rm blop
+ 1161  ls
+ 1162  open .
+ 1163  ls
+ 1164  cat blop.jpg
+ 1165  vim blop.jpg
+ 1166  more blop.jpg
+ 1167  vim blop.jpg
+ 1168  time ./a.out blop.jpg
+ 1169  time ./a.out blop.jpg 0
+ 1170  time ./a.out blop.jpg
+ 1171  time ./a.out blop.jpg 0
+ 1172  time ./a.out blop.jpg
+ 1173  time ./a.out blop.jpg 0
+ 1174  vim test.c
+ 1175  gcc test.c
+ 1176  time ./a.out blop.jpg o
+ 1177  time ./a.out blop.jpg 0
+ 1178  cat blop.jpg
+ 1179  time ./a.out blop.jpg 0
+ 1180  vim test.c
+ 1181  gcc test.c
+ 1182  ./a.out test.c
+ 1183  ./a.out test.c 0
+ 1184  vim test.c
+ 1185  gcc test.c
+ 1186  ./a.out test.c 0
+ 1187  time ./a.out blop.jpg 0
+ 1188  top
+ 1189  vim test.c
+ 1190  gcc test.c
+ 1191  time ./a.out blop.jpg 0
+ 1192  mv blop.jpg blop
+ 1193  ls
+ 1194  time ./a.out blop.jpg 0
+ 1195  time ./a.out blop 0
+ 1196  vim test.c
+ 1197  gcc test.c
+ 1198  time ./a.out blop 0
+ 1199  vim test.c
+ 1200  gcc test.c
+ 1201  time ./a.out blop 0
+ 1202  time ./a.out blop 0]
+ 1203  vim test.c
+ 1204  open .
+ 1205  time ./a.out blop.jpg 0
+ 1206  ls -la
+ 1207  an htones
+ 1208  man htons
+ 1209  cat test.c
+ 1210  vim test.c
+ 1211  ;s
+ 1212  ls
+ 1213  ./a.out ../../../Downloads/exam00.en.pdf 0
+ 1214  ./a.out ../../../Downloads/42run
+ 1215  ./a.out ../../../Downloads/minilibx_macos/Makefile
+ 1216  ./../../../Downloads/42run
+ 1217  lsl
+ 1218  ls
+ 1219  pwd
+ 1220  make re
+ 1221  cd server
+ 1222  ls
+ 1223  make re
+ 1224  ls
+ 1225  rm blop
+ 1226  rm blop.jpg
+ 1227  ls
+ 1228  rm test.c
+ 1229  ls
+ 1230  rm a.out
+ 1231  ls
+ 1232  rm toto
+ 1233  ls
+ 1234  make re
+ 1235  ./server 4242
+ 1236  ./client localhost 4242
+ 1237  ls
+ 1238  vim src/core.c
+ 1239  vim file_handling.c
+ 1240  ls
+ 1241  rm file_handling.c
+ 1242  ls
+ 1243  cd src
+ 1244  ls
+ 1245  vim file_handling.c
+ 1246  ls
+ 1247  rm *.o
+ 1248  ls
+ 1249  vim server.c
+ 1250  vim file_handling.c
+ 1251  ..
+ 1252  ls
+ 1253  cd server
+ 1254  ls
+ 1255  cd src
+ 1256  ls
+ 1257  cat core.c
+ 1258  ..
+ 1259  ls
+ 1260  ..
+ 1261  ls
+ 1262  make fclean
+ 1263  cd client
+ 1264  make fclean
+ 1265  ..
+ 1266  ls
+ 1267  cd server
+ 1268  make fclean
+ 1269  .
+ 1270  ..
+ 1271  git add -A
+ 1272  git commit -m maj
+ 1273  git push origin master
+ 1274  vim server/src/server.c
+ 1275  man 2 open
+ 1276  ls
+ 1277  cat server.c
+ 1278  vim server.c
+ 1279  ls
+ 1280  cd github
+ 1281  cd ft_p
+ 1282  cd github
+ 1283  cd ft_p
+ 1284  ls
+ 1285  cd client
+ 1286  cd server
+ 1287  ls
+ 1288  make
+ 1289  ./server 4242
+ 1290  ./client localhost 4242
+ 1291  ls
+ 1292  make clean
+ 1293  ls
+ 1294  cat src/co
+ 1295  vim src/core.c
+ 1296  man 2 open
+ 1297  ..
+ 1298  ls
+ 1299  git clone test
+ 1300  git clone https://github.com/Kerosene2000/Ft_p.git test
+ 1301  cd test
+ 1302  ls
+ 1303  cd Ft_p
+ 1304  ls
+ 1305  make re
+ 1306  vim libft/str/ft_strsplit.c
+ 1307  make re
+ 1308  ls
+ 1309  ./serveur 4242
+ 1310  ..
+ 1311  cd test
+ 1312  ls
+ 1313  cd Ft_p
+ 1314  cd srcs_client
+ 1315  ..
+ 1316  ls
+ 1317  ./client 127.0.0.1 4242
+ 1318  ls
+ 1319  cat song.mp3
+ 1320  ls
+ 1321  cat test
+ 1322  ls -l
+ 1323  ls -l /root\n: 1444911090:0;ls -l /root
+ 1324  ls -l root
+ 1325  ls
+ 1326  pwd
+ 1327  ls -l root/subdir
+ 1328  ./client 127.0.0.1 4242
+ 1329  ls
+ 1330  cp client root
+ 1331  ls root
+ 1332  ./client localhost 4242
+ 1333  ./serveur 4242
+ 1334  ./client localhost 4242
+ 1335  ./client 127.0.0.1 4242
+ 1336  ls
+ 1337  cd root
+ 1338  mv client toto
+ 1339  ..
+ 1340  ./serveur 4242
+ 1341  ./client 127.0.0.1 4242
+ 1342  cd root
+ 1343  s
+ 1344  ls
+ 1345  ls -l
+ 1346  ls -l ..
+ 1347  chmod 777 ../toto
+ 1348  ls -l ../
+ 1349  man 2 open
+ 1350  wc
+ 1351  bc
+ 1352  man fread
+ 1353  man 2 read
+ 1354  ..
+ 1355  ls
+ 1356  ..
+ 1357  ls
+ 1358  cd github
+ 1359  cd ft_p
+ 1360  ..
+ 1361  ls
+ 1362  rm -rf ft_p
+ 1363  git clone https://github.com/francoios/ft_p.git ft_p
+ 1364  cd ft_p
+ 1365  cd server
+ 1366  cd client
+ 1367  ls
+ 1368  make re
+ 1369  ./server 4242
+ 1370  ./client localhost 4242
+ 1371  ls
+ 1372  ls -l
+ 1373  cat server
+ 1374  rm -rf server
+ 1375  ls
+ 1376  ls -l
+ 1377  vim src/file_handling.c
+ 1378  cd github
+ 1379  ls
+ 1380  cd ft_p
+ 1381  man mmap
+ 1382  man stat
+ 1383  man 2 stat
+ 1384  ls
+ 1385  make re
+ 1386  vim src/file_handling.c
+ 1387  make re
+ 1388  ./server 4242
+ 1389  make re
+ 1390  ./client localhost 4242
+ 1391  ls
+ 1392  ls -l
+ 1393  vim src/file_handling.c
+ 1394  ls
+ 1395  vim toto
+ 1396  ls -l
+ 1397  ./server
+ 1398  ./server 4242
+ 1399  ./client localhost 4242
+ 1400  vim src/file_handling.c
+ 1401  make er
+ 1402  make re
+ 1403  ./server 4242
+ 1404  ./client localhost 4242
+ 1405  make clean
+ 1406  vim src/file_handling.c
+ 1407  man mmap
+ 1408  ls
+ 1409  chmod 777 server
+ 1410  ls
+ 1411  ls -l
+ 1412  ./server 4242
+ 1413  ./client localhost 4242
+ 1414  ls -l
+ 1415  rm -rf server
+ 1416  ls -l
+ 1417  vim src/file_handling.c
+ 1418  maker e
+ 1419  make re
+ 1420  vim src/file_handling.c
+ 1421  make re
+ 1422  ./server 4242
+ 1423  ./client localhost 4242
+ 1424  vim src/core.c
+ 1425  make re
+ 1426  ./server 4242
+ 1427  ./client localhost 4242
+ 1428  ./client localhost 424
+ 1429  ./client localhost 4242
+ 1430  vim ../libft/ft_strsplit.c
+ 1431  vim ../server/src/file_handling.c
+ 1432  make re
+ 1433  ./server 4242
+ 1434  ./client localhost 4242
+ 1435  vim src/file_handling.c
+ 1436  ls
+ 1437  rm toto
+ 1438  rm totot
+ 1439  rm totototo
+ 1440  rm fskgj
+ 1441  ls
+ 1442  vim src/file_handling.c
+ 1443  make re
+ 1444  ls
+ 1445  make re
+ 1446  ls
+ 1447  rm server
+ 1448  ls
+ 1449  ./server 4242
+ 1450  ./client localhost 4242
+ 1451  ls -l
+ 1452  ls-l
+ 1453  ls -l
+ 1454  rm toto
+ 1455  rm server
+ 1456  ls
+ 1457  vim src/file_handling.c
+ 1458  ls
+ 1459  ls clinet
+ 1460  ls client
+ 1461  cd clie
+ 1462  ls
+ 1463  ls -l
+ 1464  ..
+ 1465  ls
+ 1466  cd client
+ 1467  ls
+ 1468  cd src
+ 1469  ls
+ 1470  cat client.
+ 1471  cat client.c
+ 1472  vim client.c
+ 1473  ..
+ 1474  make re
+ 1475  mae re
+ 1476  make re
+ 1477  ./server 4242
+ 1478  ./client localhost 4242
+ 1479  ls
+ 1480  ./client localhost 4242
+ 1481  ls
+ 1482  vim src/file_handling.c
+ 1483  make re
+ 1484  ./server 4242
+ 1485  ./client localhost 4242
+ 1486  vim src/file_handling.c
+ 1487  man mmap
+ 1488  man stat
+ 1489  man 2 stat
+ 1490  man mmap
+ 1491  make re
+ 1492  ./server 4242
+ 1493  ./client localhost 4242
+ 1494  vim src/file_handling.c
+ 1495  man munmap
+ 1496  vim src/client.
+ 1497  vim src/client.c
+ 1498  make re
+ 1499  ./server 4242
+ 1500  ./client localhost 4242
+ 1501  ls
+ 1502  cat toto
+ 1503  ls -l
+ 1504  vim src/client.c
+ 1505  vim src/file_handling.c
+ 1506  make re
+ 1507  ./server 4242
+ 1508  ./client localhost 4242
+ 1509  vim src/client.c
+ 1510  make re
+ 1511  vim src/client.c
+ 1512  make re
+ 1513  vim src/client.c
+ 1514  make re
+ 1515  make r
+ 1516  make re
+ 1517  ./server 4242
+ 1518  ./client localhost 4242
+ 1519  vim src/client.c
+ 1520  ls -l
+ 1521  vim src/client.c
+ 1522  make re
+ 1523  ./server 4242
+ 1524  ./client localhost 4242
+ 1525  vim src/client.
+ 1526  vim src/client.c
+ 1527  vim src/server.c
+ 1528  make re
+ 1529  ./server 4242
+ 1530  ./client localhost 4242
+ 1531  vim src/client.c
+ 1532  make re
+ 1533  ./client localhost 4242
+ 1534  vim src/client.c
+ 1535  make re
+ 1536  ./server 4242
+ 1537  ./client localhost 4242
+ 1538  vim src/client.c
+ 1539  vim src/file_handling.c
+ 1540  make re
+ 1541  ./server 4242
+ 1542  ./client localhost 4242
+ 1543  ls -l
+ 1544  vim src/client.c
+ 1545  make re
+ 1546  ./server 4242
+ 1547  ./client localhost 4242
+ 1548  cat ../libft/get_next_line.h
+ 1549  vim ../libft/get_next_line.h
+ 1550  make re
+ 1551  ./server 4242
+ 1552  ./client localhost 4242
+ 1553  ls -l
+ 1554  ./server
+ 1555  rm -rf server
+ 1556  ls
+ 1557  rm toto
+ 1558  ls
+ 1559  ./client
+ 1560  ./client localhost 4242
+ 1561  cd github/ft_p
+ 1562  ls
+ 1563  cd client
+ 1564  ls -l
+ 1565  vim src/client.c
+ 1566  make re
+ 1567  ./client localhost 4242
+ 1568  vim src/file_handling.c
+ 1569  ..
+ 1570  ls
+ 1571  cd test
+ 1572  ..
+ 1573  cd test
+ 1574  ls
+ 1575  ..
+ 1576  cd gi
+ 1577  ls
+ 1578  cd ft_p
+ 1579  ls
+ 1580  cd client/
+ 1581  ls
+ 1582  rm serer
+ 1583  rm toto
+ 1584  rm server
+ 1585  cp server server2
+ 1586  ./server 4242
+ 1587  ./client localhost 4242
+ 1588  ./server 4242
+ 1589  ..
+ 1590  cd test
+ 1591  ls
+ 1592  cd Ft_p
+ 1593  ls
+ 1594  ./client localhost 4242
+ 1595  ./server 4243
+ 1596  ./client localhost 4243
+ 1597  ./client 127.0.0.1 4243
+ 1598  ls
+ 1599  cat toto
+ 1600  ls -l
+ 1601  ./client 127.0.0.1 4243
+ 1602  ls -l
+ 1603  nc 127.0.0.1 4243
+ 1604  ls -l
+ 1605  nc 127.0.0.1 4243
+ 1606  ls
+ 1607  ..
+ 1608  cd ft_p
+ 1609  cd server
+ 1610  cat server
+ 1611  ls
+ 1612  ..
+ 1613  cd ft_p
+ 1614  cd client
+ 1615  ./client 127.0.0.1 4243
+ 1616  vim src/client.c
+ 1617  vim src/server.c
+ 1618  make re
+ 1619  ./server 4243
+ 1620  make re
+ 1621  ./client 127.0.0.1 4243
+ 1622  ls -l
+ 1623  cat server
+ 1624  ./client 127.0.0.1 4243
+ 1625  cat toto
+ 1626  vim src/client.c
+ 1627  make re
+ 1628  ./client 127.0.0.1 4243
+ 1629  cat toto
+ 1630  ls -l
+ 1631  rm server2
+ 1632  rm server
+ 1633  ls
+ 1634  ls -l
+ 1635  l
+ 1636  ./client 127.0.0.1 4243
+ 1637  nc 127.0.0.1 4242
+ 1638  nc 127.0.0.1 4243
+ 1639  vim src/server.c
+ 1640  ls
+ 1641  mv toto toto2
+ 1642  make re
+ 1643  ls -l
+ 1644  rm server2
+ 1645  ./server 4243
+ 1646  ./client 127.0.0.1 4243
+ 1647  ls -l
+ 1648  cat toto
+ 1649  vim src/client.c
+ 1650  make re
+ 1651  ./server 4243
+ 1652  ./client 127.0.0.1 4243
+ 1653  ls -l
+ 1654  cat server
+ 1655  ls -l
+ 1656  vim src/client.c
+ 1657  make re
+ 1658  ./client 127.0.0.1 4243
+ 1659  ls -l
+ 1660  cat server
+ 1661  ls -l
+ 1662  rm toto
+ 1663  ls
+ 1664  l
+ 1665  vim src/client.c
+ 1666  make re
+ 1667  ./client 127.0.0.1 4243
+ 1668  ls -l
+ 1669  cat server
+ 1670  ls
+ 1671  rm server
+ 1672  ./client 127.0.0.1 4243
+ 1673  ls -l
+ 1674  cat server
+ 1675  vim src/client.c
+ 1676  make re
+ 1677  ./client 127.0.0.1 4243
+ 1678  ls -l
+ 1679  cat server
+ 1680  rm server
+ 1681  ./client 127.0.0.1 4243
+ 1682  ls -l
+ 1683  cat server
+ 1684  vim src/client.c
+ 1685  vim src/file_handling.
+ 1686  make re
+ 1687  ./server 4243
+ 1688  ./client 127.0.0.1 4243
+ 1689  rm server
+ 1690  ./client 127.0.0.1 4243
+ 1691  ls -l
+ 1692  cat server
+ 1693  vim src/file_handling.c
+ 1694  make re
+ 1695  ./server 4243
+ 1696  ./client 127.0.0.1 4243
+ 1697  vim src/file_handling.c
+ 1698  make re
+ 1699  ./server 4242
+ 1700  ./client 127.0.0.1 4242
+ 1701  ls
+ 1702  cd ..
+ 1703  ls
+ 1704  cd client
+ 1705  ls
+ 1706  cat ft_cd.c
+ 1707  vim src/client.c
+ 1708  vim src/client.
+ 1709  vim src/file_handling.c
+ 1710  make re
+ 1711  ./server 4242
+ 1712  ./client 127.0.0.1 4242
+ 1713  cat toto2
+ 1714  ls
+ 1715  rm toto
+ 1716  rm toto2
+ 1717  ls
+ 1718  rm server
+ 1719  rm ft_cd.c 
+ 1720  ls
+ 1721  make fclean
+ 1722  ls
+ 1723  ..
+ 1724  ls
+ 1725  cd server
+ 1726  ;s
+ 1727  ls
+ 1728  make fclean
+ 1729  ls
+ 1730  rm toto
+ 1731  mv toto2 toto
+ 1732  ls
+ 1733  cat toto
+ 1734  ls
+ 1735  make fclean
+ 1736  ...
+ 1737  ls
+ 1738  cd ft_p
+ 1739  ls
+ 1740  git add -A
+ 1741  git commit -m get
+ 1742  git push
+ 1743  ls -l
+ 1744  cd github/ft_p
+ 1745  cd client
+ 1746  cd server
+ 1747  ls
+ 1748  man fstat
+ 1749  vim src/file_handling.c
+ 1750  make re
+ 1751  ./server 4242
+ 1752  ./client 127.0.0.1 4242
+ 1753  ls -l
+ 1754  rm toto
+ 1755  vim src/file_handling.c
+ 1756  vim src/client.c
+ 1757  man st_mode
+ 1758  man stat
+ 1759  man fstat
+ 1760  man mode_t
+ 1761  make re
+ 1762  ./server 4242
+ 1763  ./client 127.0.0.1 4242
+ 1764  ls
+ 1765  ls -l
+ 1766  rm toto
+ 1767  ls
+ 1768  vim src/server.c
+ 1769  vim src/check_exec.c
+ 1770  ./server 4242
+ 1771  ./client 127.0.0.1 4242
+ 1772  vim src/server.c
+ 1773  vim src/client.c
+ 1774  ls
+ 1775  cd github
+ 1776  cd ft_p
+ 1777  ls
+ 1778  cd server
+ 1779  ls
+ 1780  ./server 4242
+ 1781  ./client 127.0.0.1 4242
+ 1782  vim src/client.c
+ 1783  make 
+ 1784  ./client 127.0.0.1 4242
+ 1785  vim src/client.c
+ 1786  make re
+ 1787  ./client 127.0.0.1 4242
+ 1788  vim src/client.c
+ 1789  vim make re
+ 1790  make re
+ 1791  ./client 127.0.0.1 4242
+ 1792  vim src/client.c
+ 1793  make re
+ 1794  ./client 127.0.0.1 4242
+ 1795  vim src/client.c
+ 1796  make re
+ 1797  ./client 127.0.0.1 4242
+ 1798  vim src/client.c
+ 1799  make re
+ 1800  ./client 127.0.0.1 4242
+ 1801  vim src/client.c
+ 1802  make re
+ 1803  ./client 127.0.0.1 4242
+ 1804  vim src/client.c
+ 1805  make re
+ 1806  ./client 127.0.0.1 4242
+ 1807  vim src/client.c
+ 1808  make re
+ 1809  ./client 127.0.0.1 4242
+ 1810  vim src/client.c
+ 1811  make re
+ 1812  ./client 127.0.0.1 4242
+ 1813  vim src/client.c
+ 1814  make re
+ 1815  ./client 127.0.0.1 4242
+ 1816  vim src/client.c
+ 1817  make re
+ 1818  ./client 127.0.0.1 4242
+ 1819  vim src/client.c
+ 1820  make re
+ 1821  ./client 127.0.0.1 4242
+ 1822  vim src/client.c
+ 1823  make re
+ 1824  ./client 127.0.0.1 4242
+ 1825  vim src/client.c
+ 1826  make re
+ 1827  ./client 127.0.0.1 4242
+ 1828  vim src/client.c
+ 1829  make re
+ 1830  ./client 127.0.0.1 4242
+ 1831  vim src/client.c
+ 1832  make re
+ 1833  ./client 127.0.0.1 4242
+ 1834  vim src/client.c
+ 1835  make re
+ 1836  ./client 127.0.0.1 4242
+ 1837  vim src/client.c
+ 1838  make re
+ 1839  ./client 127.0.0.1 4242
+ 1840  vim src/client.c
+ 1841  make re
+ 1842  ./client 127.0.0.1 4242
+ 1843  vim src/client.c
+ 1844  vim ../libft/get_next_line.c
+ 1845  make re
+ 1846  ./client 127.0.0.1 4242
+ 1847  vim src/server.c
+ 1848  man wait
+ 1849  man 2 wait
+ 1850  make re
+ 1851  ./server 4242
+ 1852  ./server 4243
+ 1853  ./client 127.0.0.1 4243
+ 1854  ./client 127.0.0.1 4242
+ 1855  ./server 4242
+ 1856  ./client 127.0.0.1 4242
+ 1857  vim src/server.c
+ 1858  make re
+ 1859  ./server 4242
+ 1860  ./client 127.0.0.1 4242
+ 1861  ls
+ 1862  ./client 127.0.0.1 4242
+ 1863  make re
+ 1864  ./server 4242
+ 1865  ./client 127.0.0.1 4242
+ 1866  vim includes/server.h
+ 1867  make re
+ 1868  ./server 4242
+ 1869  ./client 127.0.0.1 4242
+ 1870  vim src/client.c
+ 1871  make re
+ 1872  ./client 127.0.0.1 4242
+ 1873  ls
+ 1874  ls -l
+ 1875  ls
+ 1876  rm :q\!
+ 1877  ls
+ 1878  ./client 127.0.0.1 4242
+ 1879  vim src/client.c
+ 1880  make re
+ 1881  ./client 127.0.0.1 4242
+ 1882  vim src/client.c
+ 1883  make re
+ 1884  ./server 4242
+ 1885  ./client 127.0.0.1 4242
+ 1886  vim src/client.c
+ 1887  make re
+ 1888  ./client 127.0.0.1 4242
+ 1889  vim src/client.c
+ 1890  make re
+ 1891  ./client 127.0.0.1 4242
+ 1892  vim src/client.c
+ 1893  make re
+ 1894  ./server 4242
+ 1895  ./client 127.0.0.1 4242
+ 1896  vim src/client.c
+ 1897  make re
+ 1898  ./client 127.0.0.1 4242
+ 1899  ls
+ 1900  vim src/client.c
+ 1901  make re
+ 1902  ./client 127.0.0.1 4242
+ 1903  ls
+ 1904  ls -l
+ 1905  cd includes
+ 1906  ls
+ 1907  ..
+ 1908  ls
+ 1909  rm toto
+ 1910  ls
+ 1911  mkdir examples
+ 1912  ls
+ 1913  mv toto examples
+ 1914  ls
+ 1915  cd examples
+ 1916  ls
+ 1917  touch protectedFile
+ 1918  ls
+ 1919  ls -l
+ 1920  chmod 000 protectedFile
+ 1921  ls
+ 1922  ls -l
+ 1923  mkdir I_am_a_directory
+ 1924  ls
+ 1925  ls -l
+ 1926  ..
+ 1927  ls
+ 1928  ./client 127.0.0.1 4242
+ 1929  vim src/file_handling.c
+ 1930  vim src/client.c
+ 1931  make re
+ 1932  ls
+ 1933  ls -l
+ 1934  rm protectedFile
+ 1935  ls
+ 1936  rm toto
+ 1937  ls
+ 1938  rm I_am_a_directory
+ 1939  ls
+ 1940  ./client 127.0.0.1 4242
+ 1941  vim src/client.c
+ 1942  make re
+ 1943  ./client 127.0.0.1 4242
+ 1944  ls
+ 1945  ./client 127.0.0.1 4242
+ 1946  vim src/client.c
+ 1947  make re
+ 1948  vim src/client.c
+ 1949  make re
+ 1950  ls
+ 1951  rm toto
+ 1952  rm protectedFile
+ 1953  ls
+ 1954  make re
+ 1955  ./client 127.0.0.1 4242
+ 1956  vim src/client.c
+ 1957  make re
+ 1958  ./client 127.0.0.1 4242
+ 1959  vim src/client.c
+ 1960  make re
+ 1961  ./client 127.0.0.1 4242
+ 1962  vim src/client.
+ 1963  make re
+ 1964  ./client 127.0.0.1 4242
+ 1965  vim src/client.c
+ 1966  make re
+ 1967  ./client 127.0.0.1 4242
+ 1968  ls
+ 1969  rm protectedFile
+ 1970  rm toto
+ 1971  rm I_am_a_directory
+ 1972  ./client 127.0.0.1 4242
+ 1973  vim src/client.c
+ 1974  make re
+ 1975  ./server 4242
+ 1976  ./client 127.0.0.1 4242
+ 1977  vim src/client.c
+ 1978  make re
+ 1979  ./server 4242
+ 1980  ./client 127.0.0.1 4242
+ 1981  vim src/file_handling.c
+ 1982  make re
+ 1983  ./server 4242
+ 1984  ./server 4243
+ 1985  ./client
+ 1986  ./client 127.0.0.1 4242
+ 1987  ./client 127.0.0.1 4243
+ 1988  make re
+ 1989  ./server 4242
+ 1990  ./client 127.0.0.1 4242
+ 1991  cd examples
+ 1992  mv I_am_a_directory dir
+ 1993  ls
+ 1994  mv protectedFile pf
+ 1995  ls
+ 1996  ..
+ 1997  ./server 4242
+ 1998  ./client 127.0.0.1 4242
+ 1999  ls
+ 2000  cd github
+ 2001  ls
+ 2002  cd ft_
+ 2003  cd ft_p
+ 2004  ls
+ 2005  cd client
+ 2006  ls
+ 2007  ./client 127.0.0.1 4242
+ 2008  top
+ 2009  ./client 127.0.0.1 4242
+ 2010  ls
+ 2011  cd src
+ 2012  ls
+ 2013  cat client.c
+ 2014  ls
+ 2015  cd ..
+ 2016  ls
+ 2017  ./client 127.0.0.1 4242
+ 2018  vim includes/server.h
+ 2019  vim src/server.c
+ 2020  make re
+ 2021  ./server 4242
+ 2022  ./client 127.0.0.1 4242
+ 2023  vim src/server.c
+ 2024  make re
+ 2025  pwd
+ 2026  ./server 4242
+ 2027  ./client 127.0.0.1 4242
+ 2028  vim src/server.c
+ 2029  make re
+ 2030  ./server 4242
+ 2031  ./client 127.0.0.1 4242
+ 2032  vim src/server.c
+ 2033  make re
+ 2034  ./server 4242
+ 2035  ./server 4243
+ 2036  ./client 127.0.0.1 4243
+ 2037  vim src/server.c
+ 2038  make re
+ 2039  ./server 4242
+ 2040  ./client 127.0.0.1 4243
+ 2041  ./client 127.0.0.1 4242
+ 2042  vim src/server.c
+ 2043  make re
+ 2044  ./server 4242
+ 2045  ./client 127.0.0.1 4242
+ 2046  vim src/server.c
+ 2047  make re
+ 2048  ./server 4242
+ 2049  ./client 127.0.0.1 4242
+ 2050  vim src/server.c
+ 2051  make re
+ 2052  ./server 4242
+ 2053  ./server 4243
+ 2054  ./client 127.0.0.1 4243
+ 2055  vim src/server.c
+ 2056  make re
+ 2057  ./server 4243
+ 2058  ./server 4242
+ 2059  ./client 127.0.0.1 4242
+ 2060  top
+ 2061  man top
+ 2062  top -o cpu
+ 2063  ./client 127.0.0.1 4242
+ 2064  vim src/server.c
+ 2065  make re
+ 2066  ./server 4242
+ 2067  ./client 127.0.0.1 4242
+ 2068  ./server 4242
+ 2069  ./server 4243
+ 2070  ./client 127.0.0.1 4243
+ 2071  vim src/server.c
+ 2072  make re
+ 2073  ./server
+ 2074  ./server 4242
+ 2075  ./client 127.0.0.1 4243
+ 2076  ./client 127.0.0.1 4242
+ 2077  vim src/server.c
+ 2078  man inet_ntoa
+ 2079  ls
+ 2080  man wc
+ 2081  make re
+ 2082  top -o cpu
+ 2083  ./server 4242
+ 2084  ./server 4243
+ 2085  ./client 127.0.0.1 4243
+ 2086  cd github/ft_p/
+ 2087  ls
+ 2088  cd server
+ 2089  ls
+ 2090  ./server
+ 2091  ./server 4242
+ 2092  cd github/ft_p/client
+ 2093  ls
+ 2094  vim src/server.c
+ 2095  ls
+ 2096  cd github
+ 2097  ls
+ 2098  cd sh1
+ 2099  ls
+ 2100  cd src
+ 2101  ls
+ 2102  vim src/client.c
+ 2103  man 2 signal
+ 2104  man 3 signal
+ 2105  make re
+ 2106  ./server 4242
+ 2107  ./client 127.0.0.1 4242
+ 2108  vim src/client.c
+ 2109  make re
+ 2110  ./server 4242
+ 2111  ./client 127.0.0.1 4242
+ 2112  vim src/client.c
+ 2113  vim includes/client.h
+ 2114  vim src/client.c
+ 2115  make re
+ 2116  vim src/client.c
+ 2117  make re
+ 2118  ./server 4242
+ 2119  ./client 127.0.0.1 4242
+ 2120  vim src/client.c
+ 2121  make re
+ 2122  ./server 4242
+ 2123  ./client 127.0.0.1 4242
+ 2124  top
+ 2125  ./client 127.0.0.1 4242
+ 2126  ./server 4242
+ 2127  ./server 4243
+ 2128  ./client 127.0.0.1 4243
+ 2129  vim src/server.c
+ 2130  ./server 4243
+ 2131  ./client 127.0.0.1 4243
+ 2132  make re
+ 2133  ./client 127.0.0.1 4243
+ 2134  ./server 4243
+ 2135  ./client 127.0.0.1 4243
+ 2136  vim src/server.c
+ 2137  make re
+ 2138  ./server 4242
+ 2139  ./client 127.0.0.1 4242
+ 2140  ls
+ 2141  cd github
+ 2142  ls
+ 2143  cd ft_
+ 2144  cd ft_p
+ 2145  ls
+ 2146  cd client
+ 2147  ./client 127.0.0.1 4242
+ 2148  ./client 127.0.0.1 4243
+ 2149  ./client 127.0.0.1 4242
+ 2150  vim src/server.c
+ 2151  make re
+ 2152  ./server 4242
+ 2153  ./client 127.0.0.1 4242
+ 2154  ./server 4242
+ 2155  ./client 127.0.0.1 4242
+ 2156  vim src/server.c
+ 2157  make re
+ 2158  ./server 4242
+ 2159  ./client 127.0.0.1 4242
+ 2160  ls
+ 2161  ./client 127.0.0.1 4242
+ 2162  ./client 127.0.0.1 4242 &
+ 2163  ./client 127.0.0.1 4242 
+ 2164  fg
+ 2165  ls
+ 2166  fg
+ 2167  ls
+ 2168  fg
+ 2169  ls
+ 2170  fg
+ 2171  ./client 127.0.0.1 4242 
+ 2172  ./client 127.0.0.1 4242
+ 2173  vim src/server.c
+ 2174  ls
+ 2175  rm I_am_a_directory
+ 2176  ls
+ 2177  rm toto
+ 2178  vim src/client.c
+ 2179  clear
+ 2180  ls
+ 2181  vim src/client.c
+ 2182  make re
+ 2183  ls
+ 2184  make re
+ 2185  ./server 4242
+ 2186  ./client 127.0.0.1 4242
+ 2187  vim src/client.c
+ 2188  make re
+ 2189  ./server 4242
+ 2190  ./client 127.0.0.1 4242
+ 2191  vim src/client.c
+ 2192  make fclean
+ 2193  ..
+ 2194  cd server
+ 2195  ls
+ 2196  make fclean
+ 2197  ls
+ 2198  cd examples
+ 2199  ls
+ 2200  touch pf
+ 2201  chmod 000 pf
+ 2202  ls
+ 2203  ls -l
+ 2204  ..
+ 2205  ls
+ 2206  ..
+ 2207  ls
+ 2208  make fclean
+ 2209  ls
+ 2210  git add -A
+ 2211  cd server/examples
+ 2212  ls
+ 2213  chmod 777 of
+ 2214  chmod 777 pf
+ 2215  rm pf
+ 2216  ls
+ 2217  ..
+ 2218  git add -A
+ 2219  git commit -m maj
+ 2220  git push
+ 2221  ls
+ 2222  cd github/ft_p
+ 2223  ls
+ 2224  cd github/ft_p
+ 2225  cd client
+ 2226  cd server
+ 2227  ls
+ 2228  vim src/client.c
+ 2229  vim src/file_handling.c
+ 2230  cat src/file_handling.c
+ 2231  vim src/file_handling.c
+ 2232  clear
+ 2233  cat src/client.c
+ 2234  make re
+ 2235  ./server 4242
+ 2236  ./client 127.0.0.1 4242
+ 2237  ls -l
+ 2238  ./client 127.0.0.1 4242
+ 2239  vim src/client.c
+ 2240  make re
+ 2241  ls
+ 2242  rm client
+ 2243  ls
+ 2244  touch toto
+ 2245  vim toto
+ 2246  ./server 4242
+ 2247  ./client 127.0.0.1 4242
+ 2248  ls
+ 2249  cat toto
+ 2250  ./client
+ 2251  vim src/client.c
+ 2252  make re
+ 2253  ls
+ 2254  rm toto
+ 2255  rm client
+ 2256  ls
+ 2257  ls -l
+ 2258  lls
+ 2259  ./server 4242
+ 2260  ./client 127.0.0.1 4242
+ 2261  ..
+ 2262  ls
+ 2263  cd 42
+ 2264  ls
+ 2265  cd piscine
+ 2266  ls
+ 2267  cd noob
+ 2268  ls
+ 2269  cd colle
+ 2270  s
+ 2271  ls
+ 2272  ..
+ 2273  ls
+ 2274  cd mini-projet
+ 2275  ls
+ 2276  cd match-nmatch
+ 2277  ls
+ 2278  cd ex01
+ 2279  ls
+ 2280  cat nmatch.c
+ 2281  ..
+ 2282  ls
+ 2283  ..
+ 2284  ls
+ 2285  ..
+ 2286  ls
+ 2287  ..
+ 2288  ls
+ 2289  make re
+ 2290  ls
+ 2291  cd github
+ 2292  ls
+ 2293  cd ft_
+ 2294  cd ft_p
+ 2295  ls
+ 2296  cd client
+ 2297  ls
+ 2298  cd src
+ 2299  ls
+ 2300  cat client.
+ 2301  cat client.c
+ 2302  ls
+ 2303  cd ..
+ 2304  lg
+ 2305  ls
+ 2306  git add -A
+ 2307  ls
+ 2308  git commit -m bobo
+ 2309  git push
+ 2310  ls
+ 2311  cd ..
+ 2312  ls
+ 2313  cd ..
+ 2314  ls
+ 2315  cd 42
+ 2316  ls
+ 2317  ..s
+ 2318  ..
+ 2319  ls
+ 2320  cd github
+ 2321  ls
+ 2322  cd sh1
+ 2323  ls
+ 2324  cd src
+ 2325  ls
+ 2326  norminette *.c *.h
+ 2327  norminette *.c 
+ 2328  norminette *.ch
+ 2329  norminette *.h
+ 2330  norminette *
+ 2331  ..
+ 2332  ls
+ 2333  cd includes
+ 2334  norminette 8
+ 2335  norminette *
+ 2336  ..
+ 2337  cd libft
+ 2338  norminette *
+ 2339  vim ft_putstr.c
+ 2340  ..
+ 2341  ls
+ 2342  ..
+ 2343  ls
+ 2344  git clone  (line 15): Space before function name
+ 2345  git clone vogsphere@vogsphere.42.fr:intra/2015/activities/ft_sh1/qmuntada2 toto
+ 2346  cd toto
+ 2347  ls
+ 2348  cd src
+ 2349  norminette *
+ 2350  ..
+ 2351  cd 
+ 2352  norminette **/*.[ch]
+ 2353  cd toto
+ 2354  ls
+ 2355  cd libft
+ 2356  norminette *
+ 2357  cd ..
+ 2358  ls
+ 2359  norminette **/*
+ 2360  norminette **/*.[ch]
+ 2361  ls
+ 2362  ..
+ 2363  ls
+ 2364  s
+ 2365  ls
+ 2366  pwd
+ 2367  cd Pr
+ 2368  cd Projet\ test
+ 2369  ls
+ 2370  ..
+ 2371  ls
+ 2372  rm -rf Projet\ test
+ 2373  ls
+ 2374  cd github
+ 2375  ls
+ 2376  cd RT
+ 2377  ls
+ 2378  ./RT
+ 2379  ./RT scene1
+ 2380  ./RT scene2
+ 2381  ./RT scene3
+ 2382  ./RT scene1
+ 2383  ls
+ 2384  make fclean
+ 2385  cd github
+ 2386  ls
+ 2387  cd wolf3d
+ 2388  ls
+ 2389  vim README.md
+ 2390  cat README.md
+ 2391  ls
+ 2392  cat Makefile
+ 2393  script
+ 2394  ls
+ 2395  typescript
+ 2396  cat typescript
+ 2397  his
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=history    tory       lls[?1l>
+]2;ls -G]1;lsMakefile       env.c          fps.c          line2.c        [1m[36mminilibx_macos[39;49m[0m pre_computed.c render.c       sprite3.c      tools.c        weapon.c
+README.md      error.c        [1m[36mlibft[39;49m[0m          main.c         mouse.c        ray_cast.c     sprite.c       [1m[36mtexture[39;49m[0m        typescript     wolf.h
+auteur         event.c        line.c         map            movement.c     ray_cast2.c    sprite2.c      texture.c      vector_tools.c
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=ccat re
+[J[0mREADME.md  [Jrender.c [J[A[0m[27m[24m[33Ccat re[K[?1l>
+[J]2;cat re]1;catcat: re: No such file or directory
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=ccat re
+[J[0mREADME.md  [Jrender.c [J[A[0m[27m[24m[33Ccat re[KREADME.md
+[J[7mREADME.md[0m  [Jrender.c [J[A[0m[27m[24m[33Ccat README.md[K
+[7mREADME.md[0m  [7mREADME.md[0m  [A[0m[27m[24m[33Ccat README.md[K
+[J[A[46C[1m [0m[0m [?1l>
+[J]2;cat README.md]1;cat# WOLF3D
+
+42 - Realise a l'aide de la minilibx.
+
+MAJ : Fonctionne avec la nouvelle minilibx !
+Par contre, les libraires permettant de faire tourner la vue avec la sourie ont ete viree des dumps ;_;
+
+UPDATE : The game work and you don't need to install the mlx anymore.
+You can play it but you won't be allowed to rotate the view with the mouse.
+
+If you think mouse movement is too fast, you can adjust it in wolf.h : just modify the "# define RSPEED (ADJUSTED VALUE)"
+
+Modifying the other defines is not advised so do it at your own risk !
+Harmless modification you can do :
+	WIDTH / HEIGHT (change the resolution)
+	MSPEED (change the speed of the player)
+	SCALE (change the scale of the world, harmless but not advised)
+
+You can also customize the map or even make one yourself !
+To play on it, you have to rename it "map" and place it in the root "wolf3d" folder.
+
+Have fun !
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=,,ale   ,  mmake fclean[?1l>
+]2;make fclean]1;makeRemoving object files ...
+Removing wolf3d ...
+[1m[7m%[27m[1m[0m                                                                                                                                                                                   ]2;qmuntada@e3r3p9: ~/github/wolf3d]1;~/github/wolf3d[0m[27m[24m[Jqmuntada@e3r3p9:~/github/wolf3d% [K[?1h=ggit add -A[?1l>
+]2;git add -A]1;gitgit 

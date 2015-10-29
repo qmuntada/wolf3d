@@ -2,10 +2,10 @@
 
 42 - Realise a l'aide de la minilibx.
 
-MAJ : Fonctionne avec le nouveau minilibx mais c'est bugge a mort.
-Le jeu marche mais on peut pas tourner la vue avec la souris (merci la nouvelle mlx :) ).
+MAJ : Fonctionne avec la nouvelle minilibx !
+Par contre, les libraires permettant de faire tourner la vue avec la sourie ont ete viree des dumps ;_;
 
-UPDATE : The game work but is bugged.
+UPDATE : The game work and you don't need to install the mlx anymore.
 You can play it but you won't be allowed to rotate the view with the mouse.
 
 If you think mouse movement is too fast, you can adjust it in wolf.h : just modify the "# define RSPEED (ADJUSTED VALUE)"
