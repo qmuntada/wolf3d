@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:33:48 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/08/20 15:41:37 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/10/30 15:30:41 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,18 @@ int		mouse(int x, int y, t_env *e)
 {
 	float	y2;
 
-	if (x != e->img.width / 2)
+	if (x != e->mouseX)
 	{
-		e->p.angle += (((float)(e->img.width / 2.0) - x) / RSPEED);
+		e->p.angle += (e->mouseX - x) * 0.2 * RSPEED;
+		e->mouseX = x;
 	}
-	if (y != e->img.height / 2)
+	if (y != e->mouseY)
 	{
-		y2 = (float)(((e->img.height / 2.0) - y) / 2.0) * (RSPEED / 5);
-		if (y2 + e->img.center > 0 && y2 + e->img.center < e->img.height)
-			e->img.center += y2;
+		e->img.center += (e->mouseY - y) * RSPEED;
+		//y2 = (float)(y * (RSPEED / 5));
+		//if (y2 + e->img.center > 0 && y2 + e->img.center < e->img.height)
+		//	e->img.center += y2;
+		e->mouseY = y;
 	}
 	e->p.angle += (e->p.angle > 360 ? -360 : 0);
 	e->p.angle += (e->p.angle < 0 ? 360 : 0);

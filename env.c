@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:33:10 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/17 18:01:40 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/10/30 14:45:12 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,4 +125,6 @@ void	init_env(t_env *e, int fd)
 	e->img.dist = (e->img.width / 2) / 0.57735026;
 	e->img.center = e->img.height / 2;
 	e->line = malloc(sizeof(t_line) * e->img.width);
+	e->mouseX = e->img.width / 2;
+	e->mouseY = e->img.height / 2;
 }

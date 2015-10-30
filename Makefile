@@ -6,7 +6,7 @@
 #    By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/07 16:04:22 by qmuntada          #+#    #+#              #
-#    Updated: 2015/08/20 15:38:33 by qmuntada         ###   ########.fr        #
+#    Updated: 2015/10/30 14:41:35 by qmuntada         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,14 +17,16 @@ SRC = env.c error.c event.c fps.c line.c line2.c main.c mouse.c movement.c \
 		sprite3.c texture.c tools.c vector_tools.c weapon.c
 OBJ = $(SRC:.c=.o)
 mlx = minilibx_macos
-ft = libft
+lft = libft
 
 all : $(NAME)
 
 $(NAME) : $(ft) $(mlx)
 	@echo "Creating MAC executable $@ ..."
+	@make -C $(lft)
+	@make -C $(mlx)
 	@gcc $(FLAGS) -c $(SRC)
-	@gcc -o $(NAME) $(OBJ) -L $(ft) -lft -L $(mlx) -lmlx -framework OpenGl -framework AppKit
+	@gcc -o $(NAME) $(OBJ) -L $(lft) -lft -L $(mlx) -lmlx -framework OpenGl -framework AppKit
 
 libft:
 	@make -C libft fclean

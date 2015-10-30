@@ -3,10 +3,10 @@
 42 - Realise a l'aide de la minilibx.
 
 MAJ : Fonctionne avec la nouvelle minilibx !
-Par contre, les libraires permettant de faire tourner la vue avec la sourie ont ete viree des dumps ;_;
+Par contre, la libraire permetant de bloquer la souris au centre de l'ecran (X11) a ete viree des dumps ;_;
 
 UPDATE : The game work and you don't need to install the mlx anymore.
-You can play it but you won't be allowed to rotate the view with the mouse.
+It also work without the X11 library now but the mouse isn't locked at the center of the screen anymore.
 
 If you think mouse movement is too fast, you can adjust it in wolf.h : just modify the "# define RSPEED (ADJUSTED VALUE)"
 

@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/06 18:53:05 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/08/20 15:51:16 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/10/30 16:32:44 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,13 @@
 # include "libft/libft.h"
 # include <time.h>
 
-# define WIDTH 1280
-# define HEIGHT 720
-# define FOV 60
-# define MSPEED 8
-# define RSPEED 5
-# define BLOC 64
-# define GRAVITY 12
+# define WIDTH 1280  // width of the screen
+# define HEIGHT 720 // height of the screen
+# define FOV 60 // field of view of the player
+# define MSPEED 8 // movement speed of the player
+# define RSPEED 1 // speed of the mouse
+# define BLOC 64 // size of block
+# define GRAVITY 12 // change if you want the player to fall faster
 # define SCALE 2
 # define ESC 53
 # define Q 113
@@ -38,7 +38,7 @@
 # define S 1
 # define D 2
 # define SPACE 49
-# define C 99
+# define C 8
 # define Z 122
 # define X 120
 
@@ -206,6 +206,8 @@ typedef struct			s_env
 	int					t;
 	int					bot;
 	int					top;
+	int					mouseX;
+	int					mouseY;
 }						t_env;
 
 typedef struct			s_event_list
