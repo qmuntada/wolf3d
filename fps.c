@@ -6,7 +6,7 @@
 /*   By: qmuntada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 16:33:28 by qmuntada          #+#    #+#             */
-/*   Updated: 2015/01/13 16:33:30 by qmuntada         ###   ########.fr       */
+/*   Updated: 2015/10/30 18:04:28 by qmuntada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ void	fps(t_env *e)
 	}
 	else
 		fps++;
-	mlx_string_put(e->mlx, e->win, 5, 12, 0xFFFFFF, "fps :");
-	mlx_string_put(e->mlx, e->win, 40, 12, 0xFFFFFF, ft_itoa(fps_2));
-	mlx_string_put(e->mlx, e->win, 5, 30, 0xFFFFFF, "life :");
-	mlx_string_put(e->mlx, e->win, 50, 30, 0xFFFFFF, ft_itoa(e->p.life));
+	mlx_string_put(e->mlx, e->win, 10, 15, 0xFFFFFF, "FPS  :");
+	mlx_string_put(e->mlx, e->win, 70, 15, 0xFFFFFF, ft_itoa(fps_2));
+	mlx_string_put(e->mlx, e->win, 10, 40, 0xFFFFFF, "LIFE :");
+	mlx_string_put(e->mlx, e->win, 70, 40, 0xFFFFFF, ft_itoa(e->p.life));
 }
